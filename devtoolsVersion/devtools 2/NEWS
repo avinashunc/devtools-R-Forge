@@ -1,0 +1,25 @@
+devtools 0.2
+------------
+
+* `install_github` now uses `RCurl` instead of external `wget` to retrieve
+  package. This should make it more robust wrt external dependencies.
+
+* `load_all` will skip missing files with a warning (thanks to suggestion from Jeff Laake)
+
+* `check` automatically deletes `.Rcheck` directory on successful completion
+
+* Quote the path to R so it works even if there are spaces in the path.
+
+devtools 0.1
+------------
+
+* Check for presence of `DESCRIPTION` when loading packages to avoid false
+  positives
+
+* `install` now works correctly with `devel_mode` to install packages in your
+  development library
+
+* `release` prints news so you can more easily check it
+
+* All `R CMD xxx` functions now use the current R, not the first R found on
+  the system path.

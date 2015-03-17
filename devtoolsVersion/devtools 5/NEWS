@@ -1,0 +1,111 @@
+devtools 0.5
+--------------
+
+NEW FUNCTIONS
+
+* new `show_rd` function that will show the development version of a help
+  file.
+
+IMPROVEMENTS AND BUG FIXES
+
+* external R commands always run in locale `C`, because that's what the CRAN
+  severs do.
+
+* `clean_source` sources an R script into a fresh R environment, ensuring that
+  it can run independently of your current working environment. Optionally
+  (`vanilla = T`), it will source in a vanilla R environment which ignores all
+  local environment settings.
+
+* On windows, `devtools` will also add the path to `mingw` on startup. (Thanks
+  to pointer from Dave Lovell)
+
+devtools 0.4
+------------
+
+NEW FUNCTIONS
+
+* new `wd` function to change the working directory to a package subdirectory.
+
+* `check_doc` now checks package documentation as a whole, in the same way
+  that `R CMD check` does, rather than low-level syntax checking, which is
+  done by `roxygen2. DESCRIPTION checking has been moved into `load_all`.
+  `check_rd` has been removed.
+
+* `build` is now exported, and defaults to building in the package's parent
+  directory. It also gains a new `binary` parameter controls whether a binary
+  or a source version (with no vignettes or manuals) is built. Confusingly,
+  binary packages are built with `R CMD INSTALL`.
+
+* `build_win` sends your package to the R windows builder, allowing you to
+  make a binary version of your package for windows users if you're using
+  linux or a max (if you're using windows already, use `build(binary = T)`)
+
+IMPROVEMENTS AND BUG FIXES
+
+* if using `.Rpackages` config file, default function is used last, not first.
+
+* on Windows, `devtools` now checks for the presence of `Rtools` on startup,
+  and will automatically add it to the path if needed.
+
+* `document` uses `roxygen2` instead of `roxygen`. It now loads package
+  dependency so that they're available when roxygen executes the package
+  source code.
+
+* `document` has new parameter `clean` which clears all roxygen caches and
+  removes all existing man files. `check` now runs `document` in this mode.
+
+* `dev_mode` will create directories recursively, and complain if it can't
+  create them.  It should also work better on windows.
+
+* `install_github` now allows you to specify which branch to download, and
+  automatically reloads package if needed.
+
+* `reload` now will only reload if the package is already loaded.
+
+* `release` gains `check` parameter that allows you to skip package check (if
+  you've just done it.)
+
+* `test` automatically reloads code so you never run tests on old code 
+
+devtools 0.3
+------------
+
+* new `bash()` function that starts bash shell in package directory. Useful if
+  you want to use git etc.
+
+* removed inelegant `update_src()` since now superseded by `bash()`
+
+* fix bug in ftp upload that was adding extraneous space
+
+* `build` function builds package in specified directory. `install`, `check`
+  and `release` now all use this function.
+
+* `build`, `install`, `check` and `release` better about cleaning up after
+  themselves - always try to both work in session temporary directory and
+  delete any files/directories that they create
+
+devtools 0.2
+------------
+
+* `install_github` now uses `RCurl` instead of external `wget` to retrieve
+  package. This should make it more robust wrt external dependencies.
+
+* `load_all` will skip missing files with a warning (thanks to suggestion from Jeff Laake)
+
+* `check` automatically deletes `.Rcheck` directory on successful completion
+
+* Quote the path to R so it works even if there are spaces in the path.
+
+devtools 0.1
+------------
+
+* Check for presence of `DESCRIPTION` when loading packages to avoid false
+  positives
+
+* `install` now works correctly with `devel_mode` to install packages in your
+  development library
+
+* `release` prints news so you can more easily check it
+
+* All `R CMD xxx` functions now use the current R, not the first R found on
+  the system path.
