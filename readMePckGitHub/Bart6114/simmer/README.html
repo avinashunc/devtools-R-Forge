@@ -1,0 +1,1149 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    
+    <title>simmer/README.html at master · Bart6114/simmer · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Bart6114/simmer" name="twitter:title" /><meta content="simmer - Discrete Event Simulation for R" name="twitter:description" /><meta content="https://avatars3.githubusercontent.com/u/1965492?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars3.githubusercontent.com/u/1965492?v=3&amp;s=400" property="og:image" /><meta content="Bart6114/simmer" property="og:title" /><meta content="https://github.com/Bart6114/simmer" property="og:url" /><meta content="simmer - Discrete Event Simulation for R" property="og:description" />
+      <meta name="browser-stats-url" content="/_stats">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="C1BEC101:666B:4371876:55104A3D" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, blob#show" name="analytics-event" />
+
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="kBRZ971oDj6hSOU8l7ZbBNUv5Z7s3XQtOfi/1svtW3WpF0V2c4dbiBC4n5TAEiYI/qbqd1OCe4lDWxLbm7z+rw==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-099e0ecc2851c8aca89ef6dafa191df3b0f2a2c8ad34e134c5473ca1ba0a59b2.css" media="all" rel="stylesheet" />
+    <link href="https://assets-cdn.github.com/assets/github2-1171344316fc088255ee2a06c271d14240f1a4e06985fe9e897762947872e858.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="c0f32272c66bfb10ed7d46b7c88c6299">
+
+      
+  <meta name="description" content="simmer - Discrete Event Simulation for R">
+  <meta name="go-import" content="github.com/Bart6114/simmer git https://github.com/Bart6114/simmer.git">
+
+  <meta content="1965492" name="octolytics-dimension-user_id" /><meta content="Bart6114" name="octolytics-dimension-user_login" /><meta content="23311189" name="octolytics-dimension-repository_id" /><meta content="Bart6114/simmer" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="23311189" name="octolytics-dimension-repository_network_root_id" /><meta content="Bart6114/simmer" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/Bart6114/simmer/commits/master.atom" rel="alternate" title="Recent Commits to simmer:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public page-blob">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2FBart6114%2Fsimmer%2Fblob%2Fmaster%2FREADME.html" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <form accept-charset="UTF-8" action="/Bart6114/simmer/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/Bart6114/simmer/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <input type="text"
+    class="js-site-search-field is-clearable"
+    data-hotkey="s"
+    name="q"
+    placeholder="Search"
+    data-global-scope-placeholder="Search GitHub"
+    data-repo-scope-placeholder="Search"
+    tabindex="1"
+    autocapitalize="off">
+  <div class="scope-badge">This repository</div>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/blog" data-ga-click="(Logged out) Header, go to blog, text:blog">Blog</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2FBart6114%2Fsimmer"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/Bart6114/simmer/watchers">
+    11
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2FBart6114%2Fsimmer"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/Bart6114/simmer/stargazers">
+      15
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2FBart6114%2Fsimmer"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/Bart6114/simmer/network" class="social-count">
+        6
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="/Bart6114" class="url fn" itemprop="url" rel="author"><span itemprop="title">Bart6114</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="/Bart6114/simmer" class="js-current-repository" data-pjax="#js-repo-pjax-container">simmer</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline  ">
+        <div class="repository-sidebar clearfix">
+            
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/Bart6114/simmer/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/Bart6114/simmer" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /Bart6114/simmer">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/Bart6114/simmer/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /Bart6114/simmer/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/Bart6114/simmer/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /Bart6114/simmer/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/Bart6114/simmer/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /Bart6114/simmer/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/Bart6114/simmer/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /Bart6114/simmer/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/Bart6114/simmer/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /Bart6114/simmer/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+              <div class="only-with-full-nav">
+                  
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/Bart6114/simmer.git" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/Bart6114/simmer" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+<p class="clone-options">You can clone with
+  <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a> or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</p>
+
+
+
+                <a href="/Bart6114/simmer/archive/master.zip"
+                   class="btn btn-sm sidebar-button"
+                   aria-label="Download the contents of Bart6114/simmer as a zip file"
+                   title="Download the contents of Bart6114/simmer as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+<a href="/Bart6114/simmer/blob/6620ac9894eff0e58324be9fd1e46f1eb9e79a34/README.html" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:c368850d20c06e4ed57590b4444fc477 -->
+
+<div class="file-navigation js-zeroclipboard-container">
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <span class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master"
+    title="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/Bart6114/simmer/blob/dev/README.html"
+               data-name="dev"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="dev">
+                dev
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/Bart6114/simmer/blob/master/README.html"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/Bart6114/simmer/tree/v2.0/README.html"
+                 data-name="v2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v2.0">v2.0</a>
+            </div>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="btn-group right">
+    <a href="/Bart6114/simmer/find/master"
+          class="js-show-file-finder btn btn-sm empty-icon tooltipped tooltipped-s"
+          data-pjax
+          data-hotkey="t"
+          aria-label="Quickly jump between files">
+      <span class="octicon octicon-list-unordered"></span>
+    </a>
+    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+  </div>
+
+  <div class="breadcrumb js-zeroclipboard-target">
+    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/Bart6114/simmer" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">simmer</span></a></span></span><span class="separator">/</span><strong class="final-path">README.html</strong>
+  </div>
+</div>
+
+<include-fragment class="commit commit-loader file-history-tease" src="/Bart6114/simmer/contributors/master/README.html">
+  <div class="file-history-tease-header">
+    Fetching contributors&hellip;
+  </div>
+
+  <div class="participation">
+    <p class="loader-loading"><img alt="" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-EAF2F5-0bdc57d34b85c4a4de9d0d1db10cd70e8a95f33ff4f46c5a8c48b4bf4e5a9abe.gif" width="16" /></p>
+    <p class="loader-error">Cannot retrieve contributors at this time</p>
+  </div>
+</include-fragment>
+<div class="file">
+  <div class="file-header">
+    <div class="file-actions">
+
+      <div class="btn-group">
+        <a href="/Bart6114/simmer/raw/master/README.html" class="btn btn-sm " id="raw-url">Raw</a>
+          <a href="/Bart6114/simmer/blame/master/README.html" class="btn btn-sm js-update-url-with-hash">Blame</a>
+        <a href="/Bart6114/simmer/commits/master/README.html" class="btn btn-sm " rel="nofollow">History</a>
+      </div>
+
+
+          <button type="button" class="octicon-btn disabled tooltipped tooltipped-n" aria-label="You must be signed in to make or propose changes">
+            <span class="octicon octicon-pencil"></span>
+          </button>
+
+        <button type="button" class="octicon-btn octicon-btn-danger disabled tooltipped tooltipped-n" aria-label="You must be signed in to make or propose changes">
+          <span class="octicon octicon-trashcan"></span>
+        </button>
+    </div>
+
+    <div class="file-info">
+        156 lines (155 sloc)
+        <span class="file-info-divider"></span>
+      46.108 kb
+    </div>
+  </div>
+  
+  <div class="blob-wrapper data type-html">
+      <table class="highlight tab-size-8 js-file-line-container">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code js-file-line">&lt;p&gt;&lt;a href=&quot;https://travis-ci.org/Bart6114/simmer&quot;&gt;&lt;img src=&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MCIgaGVpZ2h0PSIxOCI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIuNyIvPjxzdG9wIG9mZnNldD0iLjEiIHN0b3AtY29sb3I9IiNhYWEiIHN0b3Atb3BhY2l0eT0iLjEiLz48c3RvcCBvZmZzZXQ9Ii45IiBzdG9wLW9wYWNpdHk9Ii4zIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii41Ii8+PC9saW5lYXJHcmFkaWVudD48cmVjdCByeD0iNCIgd2lkdGg9IjkwIiBoZWlnaHQ9IjE4IiBmaWxsPSIjNTU1Ii8+PHJlY3Qgcng9IjQiIHg9IjM3IiB3aWR0aD0iNTMiIGhlaWdodD0iMTgiIGZpbGw9IiM0YzEiLz48cGF0aCBmaWxsPSIjNGMxIiBkPSJNMzcgMGg0djE4aC00eiIvPjxyZWN0IHJ4PSI0IiB3aWR0aD0iOTAiIGhlaWdodD0iMTgiIGZpbGw9InVybCgjYSkiLz48ZyBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iRGVqYVZ1IFNhbnMsVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+PHRleHQgeD0iMTkuNSIgeT0iMTQiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiPmJ1aWxkPC90ZXh0Pjx0ZXh0IHg9IjE5LjUiIHk9IjEzIj5idWlsZDwvdGV4dD48dGV4dCB4PSI2Mi41IiB5PSIxNCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+cGFzc2luZzwvdGV4dD48dGV4dCB4PSI2Mi41IiB5PSIxMyI+cGFzc2luZzwvdGV4dD48L2c+PC9zdmc+&quot; alt=&quot;Build Status&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</td>
+      </tr>
+      <tr>
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="LC2" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;&lt;<span class="pl-ent">em</span>&gt;by Bart Smeets – &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>mailto:bartsmeets86@gmail.com<span class="pl-pds">&quot;</span></span>&gt;bartsmeets86@gmail.com&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">em</span>&gt;&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="LC3" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;&lt;<span class="pl-ent">strong</span>&gt;&lt;<span class="pl-ent">em</span>&gt;simmer&lt;/<span class="pl-ent">em</span>&gt; is under heavy development and its internals and syntax can still change extensively over the coming time&lt;/<span class="pl-ent">strong</span>&gt;&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="LC4" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;&lt;<span class="pl-ent">em</span>&gt;simmer&lt;/<span class="pl-ent">em</span>&gt; is a discrete event package for the R language. It is developed with my own specific requirements for simulating day-to-day hospital proceses and thus might not be suited for everyone. It is designed to be as simple to use as possible and tries to be compatible with the chaining/piping workflow introduced by the &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>https://github.com/smbache/magrittr<span class="pl-pds">&quot;</span></span>&gt;magrittr&lt;/<span class="pl-ent">a</span>&gt; package.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="LC5" class="blob-code js-file-line">&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>installation<span class="pl-pds">&quot;</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>section level2<span class="pl-pds">&quot;</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="LC6" class="blob-code js-file-line">&lt;<span class="pl-ent">h2</span>&gt;Installation&lt;/<span class="pl-ent">h2</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="LC7" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;The installation requires the &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>https://github.com/hadley/devtools<span class="pl-pds">&quot;</span></span>&gt;devtools&lt;/<span class="pl-ent">a</span>&gt; package to be installed.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="LC8" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;devtools::install_github(<span class="pl-c1">&amp;quot;</span>Bart6114/simmer<span class="pl-c1">&amp;quot;</span>)&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="LC9" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;Please note that the package contains some C++ code and you thus need a development environment to build the package (e.g. &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>http://cran.r-project.org/bin/windows/Rtools/<span class="pl-pds">&quot;</span></span>&gt;Rtools&lt;/<span class="pl-ent">a</span>&gt; for Windows). If you don’t want to build the package yourself and you’re on Windows you could try a pre-built binary package &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>https://github.com/Bart6114/simmer/releases/download/v2.0/simmer_2.0.zip<span class="pl-pds">&quot;</span></span>&gt;here&lt;/<span class="pl-ent">a</span>&gt;.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="LC10" class="blob-code js-file-line">&lt;/<span class="pl-ent">div</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="LC11" class="blob-code js-file-line">&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>using-simmer<span class="pl-pds">&quot;</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>section level2<span class="pl-pds">&quot;</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="LC12" class="blob-code js-file-line">&lt;<span class="pl-ent">h2</span>&gt;Using simmer&lt;/<span class="pl-ent">h2</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="LC13" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;First load the package.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="LC14" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;library(simmer)&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="LC15" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;Set-up a simple trajectory. Let’s say we want to simulate a ambulatory consultation where a patient is first seen by a nurse for an intake, next by a doctor for the consultation and finally by administrative staff to schedule a follow-up appointment.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="LC16" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;t0<span class="pl-c1">&amp;lt;</span>-</td>
+      </tr>
+      <tr>
+        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="LC17" class="blob-code js-file-line">  create_trajectory(<span class="pl-c1">&amp;quot;</span>my trajectory<span class="pl-c1">&amp;quot;</span>) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="LC18" class="blob-code js-file-line">  ## add an intake event </td>
+      </tr>
+      <tr>
+        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="LC19" class="blob-code js-file-line">  add_seize_event(<span class="pl-c1">&amp;quot;</span>nurse<span class="pl-c1">&amp;quot;</span>,1.0) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="LC20" class="blob-code js-file-line">  add_timeout_event(15) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="LC21" class="blob-code js-file-line">  add_release_event(<span class="pl-c1">&amp;quot;</span>nurse<span class="pl-c1">&amp;quot;</span>,1.0) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="LC22" class="blob-code js-file-line">  ## add a consultation event</td>
+      </tr>
+      <tr>
+        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="LC23" class="blob-code js-file-line">  add_seize_event(<span class="pl-c1">&amp;quot;</span>doctor<span class="pl-c1">&amp;quot;</span>,1.0) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="LC24" class="blob-code js-file-line">  add_timeout_event(20) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="LC25" class="blob-code js-file-line">  add_release_event(<span class="pl-c1">&amp;quot;</span>doctor<span class="pl-c1">&amp;quot;</span>,1.0) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="LC26" class="blob-code js-file-line">  ## add a planning event</td>
+      </tr>
+      <tr>
+        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="LC27" class="blob-code js-file-line">  add_seize_event(<span class="pl-c1">&amp;quot;</span>administration<span class="pl-c1">&amp;quot;</span>,1.0) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="LC28" class="blob-code js-file-line">  add_timeout_event(5) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="LC29" class="blob-code js-file-line">  add_release_event(<span class="pl-c1">&amp;quot;</span>administration<span class="pl-c1">&amp;quot;</span>,1.0)&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="LC30" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;The time-out duration is evaluated as an R command if it is entered as a character value. This means that this does not have to be a static value and the concept of probability can be introduced. The following trajectory shows this.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="LC31" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;t1<span class="pl-c1">&amp;lt;</span>-</td>
+      </tr>
+      <tr>
+        <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="LC32" class="blob-code js-file-line">  create_trajectory(<span class="pl-c1">&amp;quot;</span>my trajectory<span class="pl-c1">&amp;quot;</span>) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="LC33" class="blob-code js-file-line">  ## add an intake event </td>
+      </tr>
+      <tr>
+        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="LC34" class="blob-code js-file-line">  add_seize_event(<span class="pl-c1">&amp;quot;</span>nurse<span class="pl-c1">&amp;quot;</span>,1.0) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="LC35" class="blob-code js-file-line">  add_timeout_event(<span class="pl-c1">&amp;quot;</span>rnorm(1,15)<span class="pl-c1">&amp;quot;</span>) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="LC36" class="blob-code js-file-line">  add_release_event(<span class="pl-c1">&amp;quot;</span>nurse<span class="pl-c1">&amp;quot;</span>,1.0) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="LC37" class="blob-code js-file-line">  ## add a consultation event</td>
+      </tr>
+      <tr>
+        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="LC38" class="blob-code js-file-line">  add_seize_event(<span class="pl-c1">&amp;quot;</span>doctor<span class="pl-c1">&amp;quot;</span>,1.0) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="LC39" class="blob-code js-file-line">  add_timeout_event(<span class="pl-c1">&amp;quot;</span>rnorm(1,20)<span class="pl-c1">&amp;quot;</span>) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="LC40" class="blob-code js-file-line">  add_release_event(<span class="pl-c1">&amp;quot;</span>doctor<span class="pl-c1">&amp;quot;</span>,1.0) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="LC41" class="blob-code js-file-line">  ## add a planning event</td>
+      </tr>
+      <tr>
+        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="LC42" class="blob-code js-file-line">  add_seize_event(<span class="pl-c1">&amp;quot;</span>administration<span class="pl-c1">&amp;quot;</span>,1.0) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="LC43" class="blob-code js-file-line">  add_timeout_event(<span class="pl-c1">&amp;quot;</span>rnorm(1,5)<span class="pl-c1">&amp;quot;</span>) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="LC44" class="blob-code js-file-line">  add_release_event(<span class="pl-c1">&amp;quot;</span>administration<span class="pl-c1">&amp;quot;</span>,1.0)&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="LC45" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;In the above trajectory the &lt;<span class="pl-ent">code</span>&gt;duration&lt;/<span class="pl-ent">code</span>&gt; is drawn from a normal distribution with a given mean.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="LC46" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;When the trajectory is know, a simulator object can be build. In the below example, a simulator is instantiated and three types of resources are added. The &lt;<span class="pl-ent">em</span>&gt;nurse&lt;/<span class="pl-ent">em</span>&gt; and &lt;<span class="pl-ent">em</span>&gt;administration&lt;/<span class="pl-ent">em</span>&gt; resource each with a capacity of 1 and the &lt;<span class="pl-ent">em</span>&gt;doctor&lt;/<span class="pl-ent">em</span>&gt; resource with a capacity of 2. We specify that we to replicate the simulation 100 times using the &lt;<span class="pl-ent">code</span>&gt;n&lt;/<span class="pl-ent">code</span>&gt; argument. We also specify that we want to limit the run-time to 120 time units using the &lt;<span class="pl-ent">code</span>&gt;until&lt;/<span class="pl-ent">code</span>&gt; argument.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="LC47" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;sim<span class="pl-c1">&amp;lt;</span>-</td>
+      </tr>
+      <tr>
+        <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="LC48" class="blob-code js-file-line">  create_simulator(<span class="pl-c1">&amp;quot;</span>SuperDuperSim<span class="pl-c1">&amp;quot;</span>, n = 100, until = 80) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="LC49" class="blob-code js-file-line">  add_resource(<span class="pl-c1">&amp;quot;</span>nurse<span class="pl-c1">&amp;quot;</span>, 1) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="LC50" class="blob-code js-file-line">  add_resource(<span class="pl-c1">&amp;quot;</span>doctor<span class="pl-c1">&amp;quot;</span>, 2) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="LC51" class="blob-code js-file-line">  add_resource(<span class="pl-c1">&amp;quot;</span>administration<span class="pl-c1">&amp;quot;</span>, 1)&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="LC52" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;The simulator object is extended by adding 10 entities - with trajectory &lt;<span class="pl-ent">code</span>&gt;t1&lt;/<span class="pl-ent">code</span>&gt; - wich are activated with an interval of about 10 minutes.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="LC53" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;sim<span class="pl-c1">&amp;lt;</span>-</td>
+      </tr>
+      <tr>
+        <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="LC54" class="blob-code js-file-line">  sim %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td id="LC55" class="blob-code js-file-line">  add_entities_with_interval(trajectory = t1, n = 10, name_prefix = <span class="pl-c1">&amp;quot;</span>patient<span class="pl-c1">&amp;quot;</span>, interval =  <span class="pl-c1">&amp;quot;</span>rnorm(1, 10, 2)<span class="pl-c1">&amp;quot;</span>)&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td id="LC56" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;Entities can also be added on an individual basis. In the below example 1 extra individual entity is added which will be activated at time 100.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td id="LC57" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;sim<span class="pl-c1">&amp;lt;</span>-</td>
+      </tr>
+      <tr>
+        <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
+        <td id="LC58" class="blob-code js-file-line">  sim %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
+        <td id="LC59" class="blob-code js-file-line">  add_entity(trajectory = t1, name = <span class="pl-c1">&amp;quot;</span>separate_patient<span class="pl-c1">&amp;quot;</span> , activation_time =  100)&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
+        <td id="LC60" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;The simulation is now ready for a test run; just let it &lt;<span class="pl-ent">code</span>&gt;simmer&lt;/<span class="pl-ent">code</span>&gt; for a bit.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L61" class="blob-num js-line-number" data-line-number="61"></td>
+        <td id="LC61" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;sim <span class="pl-c1">&amp;lt;</span>-</td>
+      </tr>
+      <tr>
+        <td id="L62" class="blob-num js-line-number" data-line-number="62"></td>
+        <td id="LC62" class="blob-code js-file-line">  sim %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L63" class="blob-num js-line-number" data-line-number="63"></td>
+        <td id="LC63" class="blob-code js-file-line">  simmer()&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L64" class="blob-num js-line-number" data-line-number="64"></td>
+        <td id="LC64" class="blob-code js-file-line">&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>optional-events<span class="pl-pds">&quot;</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>section level3<span class="pl-pds">&quot;</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L65" class="blob-num js-line-number" data-line-number="65"></td>
+        <td id="LC65" class="blob-code js-file-line">&lt;<span class="pl-ent">h3</span>&gt;Optional events&lt;/<span class="pl-ent">h3</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L66" class="blob-num js-line-number" data-line-number="66"></td>
+        <td id="LC66" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;The &lt;<span class="pl-ent">em</span>&gt;skip event&lt;/<span class="pl-ent">em</span>&gt; introduces the possibility of introducing probability in whether or not to include a step in a trajectory. The following example shows how a trajectory can be build with a 50-50 chance for the entitity to undergo the second &lt;<span class="pl-ent">em</span>&gt;time-out event&lt;/<span class="pl-ent">em</span>&gt;.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L67" class="blob-num js-line-number" data-line-number="67"></td>
+        <td id="LC67" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;t2<span class="pl-c1">&amp;lt;</span>-</td>
+      </tr>
+      <tr>
+        <td id="L68" class="blob-num js-line-number" data-line-number="68"></td>
+        <td id="LC68" class="blob-code js-file-line">  create_trajectory(<span class="pl-c1">&amp;quot;</span>trajectory with a skip event<span class="pl-c1">&amp;quot;</span>) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L69" class="blob-num js-line-number" data-line-number="69"></td>
+        <td id="LC69" class="blob-code js-file-line">  ## add a skip event - (50 - 50 chance that the next event is skipped)</td>
+      </tr>
+      <tr>
+        <td id="L70" class="blob-num js-line-number" data-line-number="70"></td>
+        <td id="LC70" class="blob-code js-file-line">  add_skip_event(number_to_skip = <span class="pl-c1">&amp;quot;</span>sample(c(0,1),1)<span class="pl-c1">&amp;quot;</span>) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L71" class="blob-num js-line-number" data-line-number="71"></td>
+        <td id="LC71" class="blob-code js-file-line">  add_timeout_event(15) %<span class="pl-c1">&amp;gt;</span>%</td>
+      </tr>
+      <tr>
+        <td id="L72" class="blob-num js-line-number" data-line-number="72"></td>
+        <td id="LC72" class="blob-code js-file-line">  add_timeout_event(5)&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L73" class="blob-num js-line-number" data-line-number="73"></td>
+        <td id="LC73" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;The &lt;<span class="pl-ent">code</span>&gt;add_skip_event&lt;/<span class="pl-ent">code</span>&gt; command can be used to skip &lt;<span class="pl-ent">em</span>&gt;n&lt;/<span class="pl-ent">em</span>&gt; number of events after the &lt;<span class="pl-ent">em</span>&gt;skip event&lt;/<span class="pl-ent">em</span>&gt;. The &lt;<span class="pl-ent">em</span>&gt;n&lt;/<span class="pl-ent">em</span>&gt; number of events to skip is specified using the &lt;<span class="pl-ent">code</span>&gt;number_to_skip&lt;/<span class="pl-ent">code</span>&gt; parameter. It is import to enclose an command to be evaluated for each entity in quotes.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L74" class="blob-num js-line-number" data-line-number="74"></td>
+        <td id="LC74" class="blob-code js-file-line">&lt;/<span class="pl-ent">div</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L75" class="blob-num js-line-number" data-line-number="75"></td>
+        <td id="LC75" class="blob-code js-file-line">&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>resource-utilization<span class="pl-pds">&quot;</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>section level3<span class="pl-pds">&quot;</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L76" class="blob-num js-line-number" data-line-number="76"></td>
+        <td id="LC76" class="blob-code js-file-line">&lt;<span class="pl-ent">h3</span>&gt;Resource utilization&lt;/<span class="pl-ent">h3</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L77" class="blob-num js-line-number" data-line-number="77"></td>
+        <td id="LC77" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;After you’ve left it simmering for a bit (pun intended), we can have a look at the overall resource utilization. The top and bottom of the error bars show respectively the 25th and 75th percentile of the utilization across all the replications. The top of the bar shows the median utilization.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L78" class="blob-num js-line-number" data-line-number="78"></td>
+        <td id="LC78" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;plot_resource_utilization(sim, c(<span class="pl-c1">&amp;quot;</span>nurse<span class="pl-c1">&amp;quot;</span>, <span class="pl-c1">&amp;quot;</span>doctor<span class="pl-c1">&amp;quot;</span>,<span class="pl-c1">&amp;quot;</span>administration<span class="pl-c1">&amp;quot;</span>))&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L79" class="blob-num js-line-number" data-line-number="79"></td>
+        <td id="LC79" class="blob-code js-file-line">&lt;p&gt;&lt;img src=&quot;data:image/png;base64,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&quot; /&gt;&lt;/p&gt;</td>
+      </tr>
+      <tr>
+        <td id="L80" class="blob-num js-line-number" data-line-number="80"></td>
+        <td id="LC80" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;It is also possible to have a look at a specific resource and its activity during the simulation.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L81" class="blob-num js-line-number" data-line-number="81"></td>
+        <td id="LC81" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;plot_resource_usage(sim, <span class="pl-c1">&amp;quot;</span>doctor<span class="pl-c1">&amp;quot;</span>)&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L82" class="blob-num js-line-number" data-line-number="82"></td>
+        <td id="LC82" class="blob-code js-file-line">&lt;p&gt;&lt;img src=&quot;data:image/png;base64,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&quot; /&gt;&lt;/p&gt;</td>
+      </tr>
+      <tr>
+        <td id="L83" class="blob-num js-line-number" data-line-number="83"></td>
+        <td id="LC83" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;In the above graph, the individual lines are all seperate replications. A smooth line is drawn over them to get a sense of the &lt;<span class="pl-ent">em</span>&gt;‘average’&lt;/<span class="pl-ent">em</span>&gt; utilization. You can also see here that the &lt;<span class="pl-ent">code</span>&gt;until&lt;/<span class="pl-ent">code</span>&gt; time of 120 was most likely lower than the unrestricted run time of the simulation. It is also possible to get a graph about a specific replication by simply specifying the replication number. In the example below the 6th replication is shown.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L84" class="blob-num js-line-number" data-line-number="84"></td>
+        <td id="LC84" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;plot_resource_usage(sim, <span class="pl-c1">&amp;quot;</span>doctor<span class="pl-c1">&amp;quot;</span>, 6)&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L85" class="blob-num js-line-number" data-line-number="85"></td>
+        <td id="LC85" class="blob-code js-file-line">&lt;p&gt;&lt;img src=&quot;data:image/png;base64,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&quot; /&gt;&lt;/p&gt;</td>
+      </tr>
+      <tr>
+        <td id="L86" class="blob-num js-line-number" data-line-number="86"></td>
+        <td id="LC86" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;One can also query the raw resource monitor data.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L87" class="blob-num js-line-number" data-line-number="87"></td>
+        <td id="LC87" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;head(</td>
+      </tr>
+      <tr>
+        <td id="L88" class="blob-num js-line-number" data-line-number="88"></td>
+        <td id="LC88" class="blob-code js-file-line">  get_resource_monitor_values(sim, <span class="pl-c1">&amp;quot;</span>nurse<span class="pl-c1">&amp;quot;</span>)</td>
+      </tr>
+      <tr>
+        <td id="L89" class="blob-num js-line-number" data-line-number="89"></td>
+        <td id="LC89" class="blob-code js-file-line">  )&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L90" class="blob-num js-line-number" data-line-number="90"></td>
+        <td id="LC90" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span>&gt;&lt;<span class="pl-ent">code</span>&gt;##   time value resource replication</td>
+      </tr>
+      <tr>
+        <td id="L91" class="blob-num js-line-number" data-line-number="91"></td>
+        <td id="LC91" class="blob-code js-file-line">## 1    0     0    nurse           1</td>
+      </tr>
+      <tr>
+        <td id="L92" class="blob-num js-line-number" data-line-number="92"></td>
+        <td id="LC92" class="blob-code js-file-line">## 2    0     1    nurse           1</td>
+      </tr>
+      <tr>
+        <td id="L93" class="blob-num js-line-number" data-line-number="93"></td>
+        <td id="LC93" class="blob-code js-file-line">## 3   14     0    nurse           1</td>
+      </tr>
+      <tr>
+        <td id="L94" class="blob-num js-line-number" data-line-number="94"></td>
+        <td id="LC94" class="blob-code js-file-line">## 4   14     1    nurse           1</td>
+      </tr>
+      <tr>
+        <td id="L95" class="blob-num js-line-number" data-line-number="95"></td>
+        <td id="LC95" class="blob-code js-file-line">## 5   28     0    nurse           1</td>
+      </tr>
+      <tr>
+        <td id="L96" class="blob-num js-line-number" data-line-number="96"></td>
+        <td id="LC96" class="blob-code js-file-line">## 6   28     1    nurse           1&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L97" class="blob-num js-line-number" data-line-number="97"></td>
+        <td id="LC97" class="blob-code js-file-line">&lt;/<span class="pl-ent">div</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L98" class="blob-num js-line-number" data-line-number="98"></td>
+        <td id="LC98" class="blob-code js-file-line">&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>flow-time<span class="pl-pds">&quot;</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>section level3<span class="pl-pds">&quot;</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L99" class="blob-num js-line-number" data-line-number="99"></td>
+        <td id="LC99" class="blob-code js-file-line">&lt;<span class="pl-ent">h3</span>&gt;Flow time&lt;/<span class="pl-ent">h3</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L100" class="blob-num js-line-number" data-line-number="100"></td>
+        <td id="LC100" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;Next we can have a look at the evolution of the entities’ flow time during the simulation. In the below plot, each individual line represents a replication. A smoothline is drawn over them. All entities that didn’t finish their entire trajectory are excluded from the plot.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L101" class="blob-num js-line-number" data-line-number="101"></td>
+        <td id="LC101" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;plot_evolution_entity_times(sim, type = <span class="pl-c1">&amp;quot;</span>flow_time<span class="pl-c1">&amp;quot;</span>)&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L102" class="blob-num js-line-number" data-line-number="102"></td>
+        <td id="LC102" class="blob-code js-file-line">&lt;p&gt;&lt;img src=&quot;data:image/png;base64,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&quot; /&gt;&lt;/p&gt;</td>
+      </tr>
+      <tr>
+        <td id="L103" class="blob-num js-line-number" data-line-number="103"></td>
+        <td id="LC103" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;Similarly one can have a look at the evolution of the activity times with &lt;<span class="pl-ent">code</span>&gt;type = <span class="pl-c1">&amp;quot;</span>activity_time<span class="pl-c1">&amp;quot;</span>&lt;/<span class="pl-ent">code</span>&gt; and waiting times with &lt;<span class="pl-ent">code</span>&gt;type = <span class="pl-c1">&amp;quot;</span>waiting_time<span class="pl-c1">&amp;quot;</span>&lt;/<span class="pl-ent">code</span>&gt;.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L104" class="blob-num js-line-number" data-line-number="104"></td>
+        <td id="LC104" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;It is also possible to extract the aggregated or raw entity monitor data.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L105" class="blob-num js-line-number" data-line-number="105"></td>
+        <td id="LC105" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;head(</td>
+      </tr>
+      <tr>
+        <td id="L106" class="blob-num js-line-number" data-line-number="106"></td>
+        <td id="LC106" class="blob-code js-file-line">  get_entity_monitor_values(sim, aggregated = TRUE)</td>
+      </tr>
+      <tr>
+        <td id="L107" class="blob-num js-line-number" data-line-number="107"></td>
+        <td id="LC107" class="blob-code js-file-line">  )&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L108" class="blob-num js-line-number" data-line-number="108"></td>
+        <td id="LC108" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span>&gt;&lt;<span class="pl-ent">code</span>&gt;##   replication entity_id start_time end_time finished activity_time</td>
+      </tr>
+      <tr>
+        <td id="L109" class="blob-num js-line-number" data-line-number="109"></td>
+        <td id="LC109" class="blob-code js-file-line">## 1           1         0          0       38        1            38</td>
+      </tr>
+      <tr>
+        <td id="L110" class="blob-num js-line-number" data-line-number="110"></td>
+        <td id="LC110" class="blob-code js-file-line">## 2           1         1         11       52        1            38</td>
+      </tr>
+      <tr>
+        <td id="L111" class="blob-num js-line-number" data-line-number="111"></td>
+        <td id="LC111" class="blob-code js-file-line">## 3           1         2         17       66        1            38</td>
+      </tr>
+      <tr>
+        <td id="L112" class="blob-num js-line-number" data-line-number="112"></td>
+        <td id="LC112" class="blob-code js-file-line">## 4           2         0          0       37        1            37</td>
+      </tr>
+      <tr>
+        <td id="L113" class="blob-num js-line-number" data-line-number="113"></td>
+        <td id="LC113" class="blob-code js-file-line">## 5           2         1         11       51        1            38</td>
+      </tr>
+      <tr>
+        <td id="L114" class="blob-num js-line-number" data-line-number="114"></td>
+        <td id="LC114" class="blob-code js-file-line">## 6           2         2         17       67        1            39</td>
+      </tr>
+      <tr>
+        <td id="L115" class="blob-num js-line-number" data-line-number="115"></td>
+        <td id="LC115" class="blob-code js-file-line">##   flow_time waiting_time</td>
+      </tr>
+      <tr>
+        <td id="L116" class="blob-num js-line-number" data-line-number="116"></td>
+        <td id="LC116" class="blob-code js-file-line">## 1        38            0</td>
+      </tr>
+      <tr>
+        <td id="L117" class="blob-num js-line-number" data-line-number="117"></td>
+        <td id="LC117" class="blob-code js-file-line">## 2        41            3</td>
+      </tr>
+      <tr>
+        <td id="L118" class="blob-num js-line-number" data-line-number="118"></td>
+        <td id="LC118" class="blob-code js-file-line">## 3        49           11</td>
+      </tr>
+      <tr>
+        <td id="L119" class="blob-num js-line-number" data-line-number="119"></td>
+        <td id="LC119" class="blob-code js-file-line">## 4        37            0</td>
+      </tr>
+      <tr>
+        <td id="L120" class="blob-num js-line-number" data-line-number="120"></td>
+        <td id="LC120" class="blob-code js-file-line">## 5        40            2</td>
+      </tr>
+      <tr>
+        <td id="L121" class="blob-num js-line-number" data-line-number="121"></td>
+        <td id="LC121" class="blob-code js-file-line">## 6        50           11&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L122" class="blob-num js-line-number" data-line-number="122"></td>
+        <td id="LC122" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;Or to look at the aggregated data.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L123" class="blob-num js-line-number" data-line-number="123"></td>
+        <td id="LC123" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">code</span>&gt;head(</td>
+      </tr>
+      <tr>
+        <td id="L124" class="blob-num js-line-number" data-line-number="124"></td>
+        <td id="LC124" class="blob-code js-file-line">  get_entity_monitor_values(sim, aggregated = T)</td>
+      </tr>
+      <tr>
+        <td id="L125" class="blob-num js-line-number" data-line-number="125"></td>
+        <td id="LC125" class="blob-code js-file-line">  )&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L126" class="blob-num js-line-number" data-line-number="126"></td>
+        <td id="LC126" class="blob-code js-file-line">&lt;<span class="pl-ent">pre</span>&gt;&lt;<span class="pl-ent">code</span>&gt;##   replication entity_id start_time end_time finished activity_time</td>
+      </tr>
+      <tr>
+        <td id="L127" class="blob-num js-line-number" data-line-number="127"></td>
+        <td id="LC127" class="blob-code js-file-line">## 1           1         0          0       38        1            38</td>
+      </tr>
+      <tr>
+        <td id="L128" class="blob-num js-line-number" data-line-number="128"></td>
+        <td id="LC128" class="blob-code js-file-line">## 2           1         1         11       52        1            38</td>
+      </tr>
+      <tr>
+        <td id="L129" class="blob-num js-line-number" data-line-number="129"></td>
+        <td id="LC129" class="blob-code js-file-line">## 3           1         2         17       66        1            38</td>
+      </tr>
+      <tr>
+        <td id="L130" class="blob-num js-line-number" data-line-number="130"></td>
+        <td id="LC130" class="blob-code js-file-line">## 4           2         0          0       37        1            37</td>
+      </tr>
+      <tr>
+        <td id="L131" class="blob-num js-line-number" data-line-number="131"></td>
+        <td id="LC131" class="blob-code js-file-line">## 5           2         1         11       51        1            38</td>
+      </tr>
+      <tr>
+        <td id="L132" class="blob-num js-line-number" data-line-number="132"></td>
+        <td id="LC132" class="blob-code js-file-line">## 6           2         2         17       67        1            39</td>
+      </tr>
+      <tr>
+        <td id="L133" class="blob-num js-line-number" data-line-number="133"></td>
+        <td id="LC133" class="blob-code js-file-line">##   flow_time waiting_time</td>
+      </tr>
+      <tr>
+        <td id="L134" class="blob-num js-line-number" data-line-number="134"></td>
+        <td id="LC134" class="blob-code js-file-line">## 1        38            0</td>
+      </tr>
+      <tr>
+        <td id="L135" class="blob-num js-line-number" data-line-number="135"></td>
+        <td id="LC135" class="blob-code js-file-line">## 2        41            3</td>
+      </tr>
+      <tr>
+        <td id="L136" class="blob-num js-line-number" data-line-number="136"></td>
+        <td id="LC136" class="blob-code js-file-line">## 3        49           11</td>
+      </tr>
+      <tr>
+        <td id="L137" class="blob-num js-line-number" data-line-number="137"></td>
+        <td id="LC137" class="blob-code js-file-line">## 4        37            0</td>
+      </tr>
+      <tr>
+        <td id="L138" class="blob-num js-line-number" data-line-number="138"></td>
+        <td id="LC138" class="blob-code js-file-line">## 5        40            2</td>
+      </tr>
+      <tr>
+        <td id="L139" class="blob-num js-line-number" data-line-number="139"></td>
+        <td id="LC139" class="blob-code js-file-line">## 6        50           11&lt;/<span class="pl-ent">code</span>&gt;&lt;/<span class="pl-ent">pre</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L140" class="blob-num js-line-number" data-line-number="140"></td>
+        <td id="LC140" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;&lt;<span class="pl-ent">strong</span>&gt;DOCUMENTATION TO BE CONTINUED&lt;/<span class="pl-ent">strong</span>&gt;&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L141" class="blob-num js-line-number" data-line-number="141"></td>
+        <td id="LC141" class="blob-code js-file-line">&lt;/<span class="pl-ent">div</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L142" class="blob-num js-line-number" data-line-number="142"></td>
+        <td id="LC142" class="blob-code js-file-line">&lt;/<span class="pl-ent">div</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L143" class="blob-num js-line-number" data-line-number="143"></td>
+        <td id="LC143" class="blob-code js-file-line">&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>roadmap<span class="pl-pds">&quot;</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>section level2<span class="pl-pds">&quot;</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L144" class="blob-num js-line-number" data-line-number="144"></td>
+        <td id="LC144" class="blob-code js-file-line">&lt;<span class="pl-ent">h2</span>&gt;Roadmap&lt;/<span class="pl-ent">h2</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L145" class="blob-num js-line-number" data-line-number="145"></td>
+        <td id="LC145" class="blob-code js-file-line">&lt;<span class="pl-ent">ul</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L146" class="blob-num js-line-number" data-line-number="146"></td>
+        <td id="LC146" class="blob-code js-file-line">&lt;<span class="pl-ent">li</span>&gt;Introduce &lt;<span class="pl-ent">em</span>&gt;rewind event&lt;/<span class="pl-ent">em</span>&gt;&lt;/<span class="pl-ent">li</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L147" class="blob-num js-line-number" data-line-number="147"></td>
+        <td id="LC147" class="blob-code js-file-line">&lt;<span class="pl-ent">li</span>&gt;Time-specific resource availability&lt;/<span class="pl-ent">li</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L148" class="blob-num js-line-number" data-line-number="148"></td>
+        <td id="LC148" class="blob-code js-file-line">&lt;<span class="pl-ent">li</span>&gt;Refine queue discipline (and allow multiple types?)&lt;/<span class="pl-ent">li</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L149" class="blob-num js-line-number" data-line-number="149"></td>
+        <td id="LC149" class="blob-code js-file-line">&lt;/<span class="pl-ent">ul</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L150" class="blob-num js-line-number" data-line-number="150"></td>
+        <td id="LC150" class="blob-code js-file-line">&lt;/<span class="pl-ent">div</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L151" class="blob-num js-line-number" data-line-number="151"></td>
+        <td id="LC151" class="blob-code js-file-line">&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>contact<span class="pl-pds">&quot;</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>section level2<span class="pl-pds">&quot;</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L152" class="blob-num js-line-number" data-line-number="152"></td>
+        <td id="LC152" class="blob-code js-file-line">&lt;<span class="pl-ent">h2</span>&gt;Contact&lt;/<span class="pl-ent">h2</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L153" class="blob-num js-line-number" data-line-number="153"></td>
+        <td id="LC153" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;For bugs and/or issues: create a new issue on GitHub.&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L154" class="blob-num js-line-number" data-line-number="154"></td>
+        <td id="LC154" class="blob-code js-file-line">&lt;<span class="pl-ent">p</span>&gt;Other questions or comments: &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>mailto:bartsmeets86@gmail.com<span class="pl-pds">&quot;</span></span>&gt;bartsmeets86@gmail.com&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">p</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="L155" class="blob-num js-line-number" data-line-number="155"></td>
+        <td id="LC155" class="blob-code js-file-line">&lt;/<span class="pl-ent">div</span>&gt;</td>
+      </tr>
+</table>
+
+  </div>
+
+</div>
+
+<a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" style="display:none">Jump to Line</a>
+<div id="jump-to-line" style="display:none">
+  <form accept-charset="UTF-8" class="js-jump-to-line-form">
+    <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" autofocus>
+    <button type="submit" class="btn">Go</button>
+  </form>
+</div>
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.04370s from github-fe121-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-d22b59d0085e83b7549ba4341ec9e68f80c2f29c8e49213ee182003dc8d568c6.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-0bc0f45c838b5d9d25bc071d2a4b0abe759a093392087dce55cd2caa00ea4f36.js"></script>
+      
+      
+
+  </body>
+</html>
+

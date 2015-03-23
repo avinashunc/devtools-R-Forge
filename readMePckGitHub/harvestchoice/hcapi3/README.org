@@ -1,0 +1,988 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    
+    <title>hc-api3/README.org at master · harvestchoice/hc-api3 · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="harvestchoice/hc-api3" name="twitter:title" /><meta content="hc-api3 - Port of HarvestChoice Data Services to OpenCPU (R-based REST framework). " name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/1178758?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/1178758?v=3&amp;s=400" property="og:image" /><meta content="harvestchoice/hc-api3" property="og:title" /><meta content="https://github.com/harvestchoice/hc-api3" property="og:url" /><meta content="hc-api3 - Port of HarvestChoice Data Services to OpenCPU (R-based REST framework). " property="og:description" />
+      <meta name="browser-stats-url" content="/_stats">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="C1BEC101:6665:883254:55104FF9" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, blob#show" name="analytics-event" />
+
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="BnxHevPO1Cbd6qNAScBoDoxp0Q4KLe6sMWHYPVI3mIftFJD0TqcjkR/KGybGqN62IkpQ9vZ7shtDPjnbgKbQpg==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-099e0ecc2851c8aca89ef6dafa191df3b0f2a2c8ad34e134c5473ca1ba0a59b2.css" media="all" rel="stylesheet" />
+    <link href="https://assets-cdn.github.com/assets/github2-40d9bf14363443ccf64a2b71208f59e8739d6288d962feba121227e0608772f3.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="b6b9548efafbc4235d9cb55e3ba0c038">
+
+      
+  <meta name="description" content="hc-api3 - Port of HarvestChoice Data Services to OpenCPU (R-based REST framework). ">
+  <meta name="go-import" content="github.com/harvestchoice/hc-api3 git https://github.com/harvestchoice/hc-api3.git">
+
+  <meta content="1178758" name="octolytics-dimension-user_id" /><meta content="harvestchoice" name="octolytics-dimension-user_login" /><meta content="25758829" name="octolytics-dimension-repository_id" /><meta content="harvestchoice/hc-api3" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="25758829" name="octolytics-dimension-repository_network_root_id" /><meta content="harvestchoice/hc-api3" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/harvestchoice/hc-api3/commits/master.atom" rel="alternate" title="Recent Commits to hc-api3:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public page-blob">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fharvestchoice%2Fhc-api3%2Fblob%2Fmaster%2FREADME.org" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <form accept-charset="UTF-8" action="/harvestchoice/hc-api3/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/harvestchoice/hc-api3/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <input type="text"
+    class="js-site-search-field is-clearable"
+    data-hotkey="s"
+    name="q"
+    placeholder="Search"
+    data-global-scope-placeholder="Search GitHub"
+    data-repo-scope-placeholder="Search"
+    tabindex="1"
+    autocapitalize="off">
+  <div class="scope-badge">This repository</div>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/blog" data-ga-click="(Logged out) Header, go to blog, text:blog">Blog</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fharvestchoice%2Fhc-api3"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/harvestchoice/hc-api3/watchers">
+    4
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fharvestchoice%2Fhc-api3"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/harvestchoice/hc-api3/stargazers">
+      0
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fharvestchoice%2Fhc-api3"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/harvestchoice/hc-api3/network" class="social-count">
+        0
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="/harvestchoice" class="url fn" itemprop="url" rel="author"><span itemprop="title">harvestchoice</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="/harvestchoice/hc-api3" class="js-current-repository" data-pjax="#js-repo-pjax-container">hc-api3</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline  ">
+        <div class="repository-sidebar clearfix">
+            
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/harvestchoice/hc-api3/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/harvestchoice/hc-api3" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /harvestchoice/hc-api3">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/harvestchoice/hc-api3/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /harvestchoice/hc-api3/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/harvestchoice/hc-api3/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /harvestchoice/hc-api3/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/harvestchoice/hc-api3/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /harvestchoice/hc-api3/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+              <div class="only-with-full-nav">
+                  
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/harvestchoice/hc-api3.git" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/harvestchoice/hc-api3" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+<p class="clone-options">You can clone with
+  <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a> or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</p>
+
+
+
+                <a href="/harvestchoice/hc-api3/archive/master.zip"
+                   class="btn btn-sm sidebar-button"
+                   aria-label="Download the contents of harvestchoice/hc-api3 as a zip file"
+                   title="Download the contents of harvestchoice/hc-api3 as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+<a href="/harvestchoice/hc-api3/blob/74ee271772b8dc60fee2a85700d0b11e22fa9a43/README.org" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:2913d34b6a7add79c7b452735643e4a8 -->
+
+<div class="file-navigation js-zeroclipboard-container">
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <span class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master"
+    title="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/harvestchoice/hc-api3/blob/master/README.org"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="btn-group right">
+    <a href="/harvestchoice/hc-api3/find/master"
+          class="js-show-file-finder btn btn-sm empty-icon tooltipped tooltipped-s"
+          data-pjax
+          data-hotkey="t"
+          aria-label="Quickly jump between files">
+      <span class="octicon octicon-list-unordered"></span>
+    </a>
+    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+  </div>
+
+  <div class="breadcrumb js-zeroclipboard-target">
+    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/harvestchoice/hc-api3" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">hc-api3</span></a></span></span><span class="separator">/</span><strong class="final-path">README.org</strong>
+  </div>
+</div>
+
+<include-fragment class="commit commit-loader file-history-tease" src="/harvestchoice/hc-api3/contributors/master/README.org">
+  <div class="file-history-tease-header">
+    Fetching contributors&hellip;
+  </div>
+
+  <div class="participation">
+    <p class="loader-loading"><img alt="" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-EAF2F5-0bdc57d34b85c4a4de9d0d1db10cd70e8a95f33ff4f46c5a8c48b4bf4e5a9abe.gif" width="16" /></p>
+    <p class="loader-error">Cannot retrieve contributors at this time</p>
+  </div>
+</include-fragment>
+<div class="file">
+  <div class="file-header">
+    <div class="file-actions">
+
+      <div class="btn-group">
+        <a href="/harvestchoice/hc-api3/raw/master/README.org" class="btn btn-sm " id="raw-url">Raw</a>
+          <a href="/harvestchoice/hc-api3/blame/master/README.org" class="btn btn-sm js-update-url-with-hash">Blame</a>
+        <a href="/harvestchoice/hc-api3/commits/master/README.org" class="btn btn-sm " rel="nofollow">History</a>
+      </div>
+
+
+          <button type="button" class="octicon-btn disabled tooltipped tooltipped-n" aria-label="You must be signed in to make or propose changes">
+            <span class="octicon octicon-pencil"></span>
+          </button>
+
+        <button type="button" class="octicon-btn octicon-btn-danger disabled tooltipped tooltipped-n" aria-label="You must be signed in to make or propose changes">
+          <span class="octicon octicon-trashcan"></span>
+        </button>
+    </div>
+
+    <div class="file-info">
+        541 lines (491 sloc)
+        <span class="file-info-divider"></span>
+      17.963 kb
+    </div>
+  </div>
+    <div id="readme" class="blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
+<a id="user-content-hcapi3" class="anchor" href="#hcapi3" aria-hidden="true"><span class="octicon octicon-link"></span></a>HCAPI3</h1>
+<p>Port of HarvestChoice Data Services to an OpenCPU server at <a href="http://hcapi.harvestchoice.org/ocpu/library/hcapi3">http://hcapi.harvestchoice.org/ocpu/library/hcapi3</a>. More about HarvestChoice datasets for sub-Saharan Africa at <a href="http://harvestchoice.org/data/">http://harvestchoice.org/data/</a>.</p>
+<h2>
+<a id="user-content-overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h2>
+<p>The package documentation is at <a href="http://hcapi.harvestchoice.org/ocpu/library/hcapi3/info">http://hcapi.harvestchoice.org/ocpu/library/hcapi3/info</a>. Documentation for each API method may be accessed using <code>/man/&lt;method&gt;</code>, for example at <a href="http://hcapi.harvestchoice.org/ocpu/library/hcapi3/man/getLayer">http://hcapi.harvestchoice.org/ocpu/library/hcapi3/man/getLayer</a>
+  also in PDF format using <code>/man/&lt;method&gt;/pdf</code> at
+  <a href="http://hcapi.harvestchoice.org/ocpu/library/hcapi3/man/getLayer/pdf">http://hcapi.harvestchoice.org/ocpu/library/hcapi3/man/getLayer/pdf</a>.</p>
+<p>HTTP POST requests may be tested interactively at <a href="http://hcapi.harvestchoice.org/ocpu/">http://hcapi.harvestchoice.org/ocpu/</a>. To test requests in the console, use the following <code>curl</code> syntax. Arguments may be passed as well-structured json array with curl <code>-H Content-Type:application/json</code> flag or more directly as URL arguments using <code>-d param1=value1&amp;param2=value2</code> construct. JavaScript examples are available from <a href="https://www.opencpu.org/jslib.html">OpenCPU</a>.</p>
+<div class="highlight highlight-sh"><pre>
+<span class="pl-c"># Simple data request with aggregation at district level (Ethiopia)</span>
+<span class="pl-c"># returning a JSON data array</span>
+$  curl http://hcapi.harvestchoice.org/ocpu/library/hcapi3/R/getLayer/json \
+-d <span class="pl-s"><span class="pl-pds">'</span>{"var": ["whea_h", "bmi"], "iso3": "ETH", "by": "ADM2_NAME_ALT", "as.class" : "list"}<span class="pl-pds">'</span></span> \
+-X POST -H <span class="pl-s"><span class="pl-pds">"</span>Content-Type:application/json<span class="pl-pds">"</span></span></pre></div>
+<div class="highlight highlight-json"><pre>
+{
+    <span class="pl-s"><span class="pl-pds">"</span>ColumnList<span class="pl-pds">"</span></span>: [
+        {
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnCode<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>ADM2_NAME_ALT<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnName<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Adm-2 Name (GAUL, 2008 mod.)<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnUnit<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>class<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnDesc<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Second-level administrative boundaries based on GAUL 2008 (release 2009).<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnSource<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Food and Agriculture Organization of the United Nations. FAO GEONETWORK. Global Administrative Unit Layers (GAUL) (GeoLayer). (Latest update: 18 Feb 2014) Accessed (20 Feb 2014). URI: http://data.fao.org/ref/f7e7adb0-88fd-11da-a88f-000d939bc5d8.html?version=1.0<span class="pl-pds">"</span></span>
+        },
+        {
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnCode<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnName<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat area '05<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnUnit<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>ha<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnDesc<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Spatially disaggregated production statistics of circa 2000 using the Spatial Production Allocation Model (SPAM). Values are for 5 arc-minute grid cells.<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnSource<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>You, L., Z. Guo, J. Koo, K. Sebastian, and U. Wood-Sichra. Spatial Production Allocation Model (SPAM) 2005 Version 1.<span class="pl-pds">"</span></span>
+        },
+        {
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnCode<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>bmi<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnName<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>BMI<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnUnit<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>index<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnDesc<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>BMI (not adjusted for pregnancy)<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>ColumnSource<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>MEASURE Demographic and Health Surveys (multiple surveys), 2005-2012<span class="pl-pds">"</span></span>
+        }
+    ],
+    <span class="pl-s"><span class="pl-pds">"</span>ValueList<span class="pl-pds">"</span></span>: [
+        [
+            <span class="pl-s"><span class="pl-pds">"</span>North Western Tigray<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span> 13003<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>19.0<span class="pl-pds">"</span></span>
+        ],
+        [
+            <span class="pl-s"><span class="pl-pds">"</span>Central Tigray<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span> 27858<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>19.0<span class="pl-pds">"</span></span>
+        ],
+        [
+            <span class="pl-s"><span class="pl-pds">"</span>Eastern Tigray<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span> 18586<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>19.0<span class="pl-pds">"</span></span>
+        ],
+        [
+            <span class="pl-s"><span class="pl-pds">"</span>Afar Zone 2<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>     8<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>18.8<span class="pl-pds">"</span></span>
+        ],
+        [ <span class="pl-ii">truncated...</span>
+        ]
+    ]
+}
+</pre></div>
+<div class="highlight highlight-sh"><pre>
+<span class="pl-c"># HC API also supports json gzip compression with '--compress' argument.</span>
+<span class="pl-c"># This is only useful on large data responses, otherwise entails a little extra overhead.</span>
+$  <span class="pl-k">time</span> curl http://hcapi.harvestchoice.org/ocpu/library/hcapi3/R/getLayer/json --compress \
+-d <span class="pl-s"><span class="pl-pds">'</span>{"var": ["whea_h", "bmi"], "iso3": "GHA", "by": "ADM1_NAME_ALT"}<span class="pl-pds">'</span></span> \
+-X POST -H <span class="pl-s"><span class="pl-pds">"</span>Content-Type:application/json<span class="pl-pds">"</span></span></pre></div>
+<div class="highlight highlight-json"><pre>
+[
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Upper East<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>bmi<span class="pl-pds">"</span></span>: <span class="pl-c1">20.7</span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Upper West<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>bmi<span class="pl-pds">"</span></span>: <span class="pl-c1">21.1</span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Northern<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>bmi<span class="pl-pds">"</span></span>: <span class="pl-c1">20.9</span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Brong Ahafo<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>bmi<span class="pl-pds">"</span></span>: <span class="pl-c1">21.3</span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Volta<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>bmi<span class="pl-pds">"</span></span>: <span class="pl-c1">21.9</span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Ashanti<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>bmi<span class="pl-pds">"</span></span>: <span class="pl-c1">22.2</span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Eastern<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>bmi<span class="pl-pds">"</span></span>: <span class="pl-c1">23.1</span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Western<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>bmi<span class="pl-pds">"</span></span>: <span class="pl-c1">22.6</span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Central<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>bmi<span class="pl-pds">"</span></span>: <span class="pl-c1">22.9</span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Greater Accra<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>bmi<span class="pl-pds">"</span></span>: <span class="pl-c1">22.8</span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>buffer gridcell<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>
+    }
+]
+
+real    <span class="pl-c1">0</span>m<span class="pl-c1">0.913</span>s
+user    <span class="pl-c1">0</span>m<span class="pl-c1">0.000</span>s
+sys     <span class="pl-c1">0</span>m<span class="pl-c1">0.031</span>s
+</pre></div>
+<div class="highlight highlight-sh"><pre>
+<span class="pl-c"># Same request returning a simple json array (no metadata)</span>
+$  curl http://hcapi.harvestchoice.org/ocpu/library/hcapi3/R/getLayer/json \
+-d <span class="pl-s"><span class="pl-pds">'</span>{"var": ["whea_h", "bmi"], "iso3": "ETH", "by": "ADM2_NAME_ALT"}<span class="pl-pds">'</span></span> \
+-X POST -H <span class="pl-s"><span class="pl-pds">"</span>Content-Type:application/json<span class="pl-pds">"</span></span></pre></div>
+<div class="highlight highlight-json"><pre>
+[
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>ADM2_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>North Western Tigray<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">13003</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>bmi<span class="pl-pds">"</span></span>: <span class="pl-c1">19</span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>ADM2_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Central Tigray<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">27858</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>bmi<span class="pl-pds">"</span></span>: <span class="pl-c1">19</span>
+    },
+    { <span class="pl-ii">truncated...</span>
+    }
+]
+</pre></div>
+<div class="highlight highlight-sh"><pre>
+<span class="pl-c"># Request a STATA file of mean maize yield and dominant agro-eco zone by region for</span>
+<span class="pl-c"># Ghana and Mali. Note that 2 requests are required to 1) generate and then 2)</span>
+<span class="pl-c"># download ZIP file.</span>
+$ curl http://hcapi.harvestchoice.org/ocpu/library/hcapi3/R/genFile \
+-d <span class="pl-s"><span class="pl-pds">'</span>{"var": ["maiz_y", "AEZ8_CLAS"], "iso3" : ["GHA", "MLI"], "by" : "ADM1_NAME_ALT", "format" : "dta"}<span class="pl-pds">'</span></span> \
+-X POST -H <span class="pl-s"><span class="pl-pds">"</span>Content-Type:application/json<span class="pl-pds">"</span></span>
+/ocpu/tmp/x0a3355977c/R/.val
+/ocpu/tmp/x0a3355977c/messages
+/ocpu/tmp/x0a3355977c/stdout
+/ocpu/tmp/x0a3355977c/source
+/ocpu/tmp/x0a3355977c/console
+/ocpu/tmp/x0a3355977c/info
+/ocpu/tmp/x0a3355977c/files/DESCRIPTION
+/ocpu/tmp/x0a3355977c/files/maiz_y-ADM1_NAME_ALT-GHA.dta.zip
+
+$ wget http://hcapi.harvestchoice.org/ocpu/tmp/x0a3355977c/files/maiz_y-ADM1_NAME_ALT-GHA.dta.zip
+</pre></div>
+<div class="highlight highlight-sh"><pre>
+<span class="pl-c"># Request a GeoTIFF file</span>
+$ <span class="pl-k">time</span> curl http://hcapi.harvestchoice.org/ocpu/library/hcapi3/R/genFile \
+-d <span class="pl-s"><span class="pl-pds">'</span>{"var": ["whea_h", "bmi"], "iso3": "ETH", "format": "tif"}<span class="pl-pds">'</span></span> \
+-X POST -H <span class="pl-s"><span class="pl-pds">"</span>Content-Type:application/json<span class="pl-pds">"</span></span>
+
+/ocpu/tmp/x00c295c697/R/.val
+/ocpu/tmp/x00c295c697/stdout
+/ocpu/tmp/x00c295c697/source
+/ocpu/tmp/x00c295c697/console
+/ocpu/tmp/x00c295c697/info
+/ocpu/tmp/x00c295c697/files/DESCRIPTION
+/ocpu/tmp/x00c295c697/files/whea_h--ETH.tif.zip
+
+real    0m0.983s
+user    0m0.015s
+sys     0m0.030s
+
+$ <span class="pl-k">time</span> wget http://hcapi.harvestchoice.org/ocpu/tmp/x00c295c697/files/whea_h--ETH.tif.zip
+
+Resolving hcapi.harvestchoice.org (hcapi.harvestchoice.org)... 206.190.150.74
+Connecting to hcapi.harvestchoice.org (hcapi.harvestchoice.org)<span class="pl-k">|</span>206.190.150.74<span class="pl-k">|</span>:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/zip]
+Saving to: <span class="pl-s"><span class="pl-pds">"</span>whea_h--ETH.tif.zip<span class="pl-pds">"</span></span>
+
+whea_h--ETH.tif.zip      [  <span class="pl-k">&lt;</span>=<span class="pl-k">&gt;</span>                     ]  79.59K   200KB/s   <span class="pl-k">in</span> 0.4s
+
+2014-12-20 18:57:09 (200 KB/s) - <span class="pl-s"><span class="pl-pds">"</span>whea_h--ETH.tif.zip<span class="pl-pds">"</span></span> saved [81498]
+
+real    0m1.007s
+user    0m0.015s
+sys     0m0.062s
+</pre></div>
+<div class="highlight highlight-sh"><pre>
+<span class="pl-c"># Return variable metadata only (variable codes by category). Will perform a fuzzy</span>
+<span class="pl-c"># search across all variable metadata matching `cat` argument (e.g. cat='wheat').</span>
+$ curl http://hcapi.harvestchoice.org/ocpu/library/hcapi3/R/category/json \
+-d <span class="pl-s"><span class="pl-pds">"</span>cat='whea'<span class="pl-pds">"</span></span> -X POST</pre></div>
+<div class="highlight highlight-json"><pre>
+{
+    <span class="pl-s"><span class="pl-pds">"</span>Agroecology<span class="pl-pds">"</span></span>: {
+        <span class="pl-s"><span class="pl-pds">"</span>Pests and Diseases<span class="pl-pds">"</span></span>: [
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Agroecology<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Pests and Diseases<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Stemrust<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>IR_EI<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Stemrust Prevalence in Irrigated Wheat<span class="pl-pds">"</span></span>
+            },
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Agroecology<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Pests and Diseases<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Stemrust<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>IR_EI_CLAS<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Stemrust Prevalence in Irrigated Wheat (Low-Med-High)<span class="pl-pds">"</span></span>
+            },
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Agroecology<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Pests and Diseases<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Stemrust<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>IR_GI<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Stemrust Prevalence in Irrigated Wheat<span class="pl-pds">"</span></span>
+            },
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Agroecology<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Pests and Diseases<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Stemrust<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>IR_GI_CLAS<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Stemrust Prevalence in Irrigated Wheat (Low-Med-High)<span class="pl-pds">"</span></span>
+            },
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Agroecology<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Pests and Diseases<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Stemrust<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>RF_EI<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Stemrust Prevalence in Rainfed Wheat<span class="pl-pds">"</span></span>
+            },
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Agroecology<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Pests and Diseases<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Stemrust<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>RF_EI_CLAS<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Stemrust Prevalence in Rainfed Wheat (Low-Med-High)<span class="pl-pds">"</span></span>
+            },
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Agroecology<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Pests and Diseases<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Stemrust<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>RF_GI<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Stemrust Prevalence in Rainfed Wheat<span class="pl-pds">"</span></span>
+            },
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Agroecology<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Pests and Diseases<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Stemrust<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>RF_GI_CLAS<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Stemrust Prevalence in Rainfed Wheat (Low-Med-High)<span class="pl-pds">"</span></span>
+            }
+        ]
+    },
+    <span class="pl-s"><span class="pl-pds">"</span>Farming Systems<span class="pl-pds">"</span></span>: {
+        <span class="pl-s"><span class="pl-pds">"</span>Harvested Area<span class="pl-pds">"</span></span>: [
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Farming Systems<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Harvested Area<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Harvested Area (ha, 2005)<span class="pl-pds">"</span></span>
+            },
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Farming Systems<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Harvested Area<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>whea_i_h<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Irrigated Harvested Area (ha, 2005)<span class="pl-pds">"</span></span>
+            },
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Farming Systems<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Harvested Area<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>whea_r_h<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Rainfed Harvested Area (ha, 2005)<span class="pl-pds">"</span></span>
+            }
+        ],
+        <span class="pl-s"><span class="pl-pds">"</span>Production<span class="pl-pds">"</span></span>: [
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Farming Systems<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Production<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>whea_i_p<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Irrigated Production (mt, 2005)<span class="pl-pds">"</span></span>
+            },
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Farming Systems<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Production<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>whea_p<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Production (mt, 2005)<span class="pl-pds">"</span></span>
+            },
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Farming Systems<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Production<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>whea_r_p<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Rainfed Production (mt, 2005)<span class="pl-pds">"</span></span>
+            }
+        ],
+        <span class="pl-s"><span class="pl-pds">"</span>Value of Production<span class="pl-pds">"</span></span>: [
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Farming Systems<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Value of Production<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>whea_v<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Value Production (Int$, 2005)<span class="pl-pds">"</span></span>
+            }
+        ],
+        <span class="pl-s"><span class="pl-pds">"</span>Yield<span class="pl-pds">"</span></span>: [
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Farming Systems<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Yield<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>whea_i_y<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Irrigated Yield (kg/ha, 2005)<span class="pl-pds">"</span></span>
+            },
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Farming Systems<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Yield<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>whea_r_y<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Rainfed Yield (kg/ha, 2005)<span class="pl-pds">"</span></span>
+            },
+            {
+                <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Farming Systems<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Yield<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>whea_y<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>Title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Yield (kg/ha, 2005)<span class="pl-pds">"</span></span>
+            }
+        ]
+    }
+}
+</pre></div>
+<div class="highlight highlight-sh"><pre>
+<span class="pl-c"># Return full variable metadata for any series of data layers or for any data layer(s)</span>
+<span class="pl-c">#  matching `cat` argument (e.g. cat='population').</span>
+$ curl http://hcapi.harvestchoice.org/ocpu/library/hcapi3/R/describe/json \
+-d <span class="pl-s"><span class="pl-pds">"</span>var=['whea_h', 'PD05_RUR']<span class="pl-pds">"</span></span> -X POST
+
+<span class="pl-c"># or</span>
+$ curl http://hcapi.harvestchoice.org/ocpu/library/hcapi3/R/describe/json \
+-d <span class="pl-s"><span class="pl-pds">"</span>cat='population'<span class="pl-pds">"</span></span> -X POST</pre></div>
+<div class="highlight highlight-json"><pre>
+[
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>Label<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat area '05<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Code<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Unit<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>ha<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Type<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>continuous<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Period<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>2000<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Category<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Farming Systems<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Subcategory<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Harvested Area<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Item<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Source<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>You, L., Z. Guo, J. Koo, K. Sebastian, and U. Wood-Sichra. Spatial Production Allocation Model (SPAM) 2005 Version 1.<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Contact<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>u.wood-sichra@cgiar.org<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Details<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat Harvested Area (ha, 2005). Spatially disaggregated production statistics of circa 2000 using the Spatial Production Allocation Model (SPAM). Values are for 5 arc-minute grid cells.<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Citation<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>HarvestChoice, 2014. <span class="pl-cce">\"</span>Wheat Harvested Area (ha, 2005)<span class="pl-cce">\"</span>, International Food Policy Research Institute, Washington, DC., and University of Minnesota, St. Paul, MN. Available online at http://harvestchoice.org/data/whea_h<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Version<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>SChEF r2.0<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>In Table<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>cell5m_spam2005v1_harvestarea<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Formula<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>isRaster<span class="pl-pds">"</span></span>: <span class="pl-c1">true</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>dTopic<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Production<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>dCrop<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Wheat<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>dKeywords<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Crop, Crop Area, Wheat Area, Wheat Production, Sub-Saharan Africa<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>classBreaks<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>0|79|260|495|812|1360|2590<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>classLabels<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>none|under 80|80 - 260|260 - 495|495 - 812|812 - 1360|over 1360<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>classColors<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>#ffffffff|#EDF8E9|#C7E9C0|#A1D99B|#74C476|#31A354|#006D2C<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Website<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>http://harvestchoice.org/data/whea_h<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>WMS<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>http://dev.harvestchoice.org:6080/arcgis/services/spam05_cell5m_h/MapServer/WMSServer<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Downloaded on<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>2014-11-03<span class="pl-pds">"</span></span>
+    }
+]
+</pre></div>
+<h2>
+<a id="user-content-updates" class="anchor" href="#updates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Updates</h2>
+<p><b>2015.01.22</b>: allow filtering variables across multiple country ISO3 codes.</p>
+<p><b>2014.12.18</b>: added a new argument <code>as.class=c("data.table", "list")</code> to <code>getLayer()</code> to allow control on the structure of the generated JSON response.</p>
+<p><b>2014.11.11</b>: added a new method <code>classify()</code> for “on-the-fly” domain classification (aka. Spatial Targeting Tool) documented at <a href="http://hcapi.harvestchoice.org/ocpu/library/hcapi3/man/classify/pdf">http://hcapi.harvestchoice.org/ocpu/library/hcapi3/man/classify/pdf</a>.</p>
+<div class="highlight highlight-sh"><pre>
+<span class="pl-c"># Sample request</span>
+$ <span class="pl-k">time</span> curl http://hcapi.harvestchoice.org/ocpu/library/hcapi3/R/classify/json \
+ -d <span class="pl-s"><span class="pl-pds">'</span>{"var" : ["whea_h", "AEZ16_CLAS"], "by" : {"AEZ16_CLAS": "Tropic - warm / semiarid", "PD05_RUR" : [60, 100], "TT_20K" : [0, 5]}}<span class="pl-pds">'</span></span> \
+ -X POST -H <span class="pl-s"><span class="pl-pds">"</span>Content-Type:application/json<span class="pl-pds">"</span></span></pre></div>
+<div class="highlight highlight-json"><pre>
+[
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>TT_20K<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>(0,5]<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">111336</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>AEZ16_CLAS<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Tropic - warm / semiarid<span class="pl-pds">"</span></span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">26446</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>AEZ16_CLAS<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Tropic - warm / semiarid<span class="pl-pds">"</span></span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>PD05_RUR<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>(60,100]<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>TT_20K<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>(0,5]<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">14437</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>AEZ16_CLAS<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Tropic - warm / semiarid<span class="pl-pds">"</span></span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>PD05_RUR<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>(60,100]<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">6201</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>AEZ16_CLAS<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Tropic - warm / semiarid<span class="pl-pds">"</span></span>
+    }
+]
+
+real    <span class="pl-c1">0</span>m<span class="pl-c1">1.100</span>s
+user    <span class="pl-c1">0</span>m<span class="pl-c1">0.015</span>s
+sys     <span class="pl-c1">0</span>m<span class="pl-c1">0.015</span>s</pre></div>
+<p><b>2014.11.10</b>: changed data storage from sqlite database to persistent Rserve session (faster). rApache and RSQLite seemed to have a library conflict (logged bug <a href="https://github.com/rstats-db/RSQLite/issues/60#issuecomment-62497666">#issuecomment-62497666</a>).</p>
+<p><b>2014.11.10</b>: added a new method <code>getLayerWKT()</code> to support point/polygon summaries.</p>
+<div class="highlight highlight-sh"><pre>
+<span class="pl-c"># Sample request with a few points</span>
+$ <span class="pl-k">time</span> curl http://hcapi.harvestchoice.org/ocpu/library/hcapi3/R/getLayerWKT/json \
+ -d <span class="pl-s"><span class="pl-pds">'</span>{"var" : ["whea_h", "AEZ16_CLAS"], "wkt" : "MULTIPOINT((35.69319860636820607 -3.91388197570256979), (35.47695932281013853 -4.34541210453119486), (36.61014339398586515 -6.19304393571206635), (36.47436786329777902 -5.51879978940470828))"}<span class="pl-pds">'</span></span> \
+ -X POST -H <span class="pl-s"><span class="pl-pds">"</span>Content-Type:application/json<span class="pl-pds">"</span></span></pre></div>
+<div class="highlight highlight-json"><pre>
+[
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>CELL5M<span class="pl-pds">"</span></span>: <span class="pl-c1">4987879</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ISO3<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>TZA<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ADM0_NAME<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>United Republic of Tanzania<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Dodoma<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ADM2_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Kongwa<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>X<span class="pl-pds">"</span></span>: <span class="pl-c1">36.625</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Y<span class="pl-pds">"</span></span>: <span class="pl-c1">-6.2083</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>AEZ16_CLAS<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Tropic - warm / semiarid<span class="pl-pds">"</span></span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>CELL5M<span class="pl-pds">"</span></span>: <span class="pl-c1">4866908</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ISO3<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>TZA<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ADM0_NAME<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>United Republic of Tanzania<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Manyara<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ADM2_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Babati<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>X<span class="pl-pds">"</span></span>: <span class="pl-c1">35.7083</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Y<span class="pl-pds">"</span></span>: <span class="pl-c1">-3.875</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>AEZ16_CLAS<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Tropic - warm / semiarid<span class="pl-pds">"</span></span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>CELL5M<span class="pl-pds">"</span></span>: <span class="pl-c1">4892825</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ISO3<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>TZA<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ADM0_NAME<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>United Republic of Tanzania<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Manyara<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ADM2_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Hanang<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>X<span class="pl-pds">"</span></span>: <span class="pl-c1">35.4583</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Y<span class="pl-pds">"</span></span>: <span class="pl-c1">-4.375</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">148</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>AEZ16_CLAS<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Tropic - cool / subhumid<span class="pl-pds">"</span></span>
+    },
+    {
+        <span class="pl-s"><span class="pl-pds">"</span>CELL5M<span class="pl-pds">"</span></span>: <span class="pl-c1">4953317</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ISO3<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>TZA<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ADM0_NAME<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>United Republic of Tanzania<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ADM1_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Manyara<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>ADM2_NAME_ALT<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Kiteto<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>X<span class="pl-pds">"</span></span>: <span class="pl-c1">36.4583</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>Y<span class="pl-pds">"</span></span>: <span class="pl-c1">-5.5417</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>whea_h<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>AEZ16_CLAS<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Tropic - cool / semiarid<span class="pl-pds">"</span></span>
+    }
+]
+
+
+real    <span class="pl-c1">0</span>m<span class="pl-c1">2.660</span>s
+user    <span class="pl-c1">0</span>m<span class="pl-c1">0.000</span>s
+sys     <span class="pl-c1">0</span>m<span class="pl-c1">0.030</span>s</pre></div>
+</article>
+  </div>
+
+</div>
+
+<a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" style="display:none">Jump to Line</a>
+<div id="jump-to-line" style="display:none">
+  <form accept-charset="UTF-8" class="js-jump-to-line-form">
+    <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" autofocus>
+    <button type="submit" class="btn">Go</button>
+  </form>
+</div>
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.07706s from github-fe116-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-d22b59d0085e83b7549ba4341ec9e68f80c2f29c8e49213ee182003dc8d568c6.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-b1799c46bb59be68d925cba885ab38303711632ad670e579e1bc4857963e52cb.js"></script>
+      
+      
+
+  </body>
+</html>
+

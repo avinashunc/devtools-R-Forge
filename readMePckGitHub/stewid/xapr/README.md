@@ -1,0 +1,676 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    
+    <title>xapr/README.md at master · stewid/xapr · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="stewid/xapr" name="twitter:title" /><meta content="xapr - R bindings to the Xapian search engine" name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/1815965?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/1815965?v=3&amp;s=400" property="og:image" /><meta content="stewid/xapr" property="og:title" /><meta content="https://github.com/stewid/xapr" property="og:url" /><meta content="xapr - R bindings to the Xapian search engine" property="og:description" />
+      <meta name="browser-stats-url" content="/_stats">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="C1BEC102:452D:4424CFE:55104BD9" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, blob#show" name="analytics-event" />
+
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="G/+btQ/xnxH7uoGpbjRnvPcTesWo0LZBMaOlDKnxmBKxdi7vgoSvEI8Szcw6cF9tSpNwfn3euycwQun4XzD6Sg==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-099e0ecc2851c8aca89ef6dafa191df3b0f2a2c8ad34e134c5473ca1ba0a59b2.css" media="all" rel="stylesheet" />
+    <link href="https://assets-cdn.github.com/assets/github2-1171344316fc088255ee2a06c271d14240f1a4e06985fe9e897762947872e858.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="c0f32272c66bfb10ed7d46b7c88c6299">
+
+      
+  <meta name="description" content="xapr - R bindings to the Xapian search engine">
+  <meta name="go-import" content="github.com/stewid/xapr git https://github.com/stewid/xapr.git">
+
+  <meta content="1815965" name="octolytics-dimension-user_id" /><meta content="stewid" name="octolytics-dimension-user_login" /><meta content="23969068" name="octolytics-dimension-repository_id" /><meta content="stewid/xapr" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="23969068" name="octolytics-dimension-repository_network_root_id" /><meta content="stewid/xapr" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/stewid/xapr/commits/master.atom" rel="alternate" title="Recent Commits to xapr:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public page-blob">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fstewid%2Fxapr%2Fblob%2Fmaster%2FREADME.md" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <form accept-charset="UTF-8" action="/stewid/xapr/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/stewid/xapr/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <input type="text"
+    class="js-site-search-field is-clearable"
+    data-hotkey="s"
+    name="q"
+    placeholder="Search"
+    data-global-scope-placeholder="Search GitHub"
+    data-repo-scope-placeholder="Search"
+    tabindex="1"
+    autocapitalize="off">
+  <div class="scope-badge">This repository</div>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/blog" data-ga-click="(Logged out) Header, go to blog, text:blog">Blog</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fstewid%2Fxapr"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/stewid/xapr/watchers">
+    1
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fstewid%2Fxapr"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/stewid/xapr/stargazers">
+      0
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fstewid%2Fxapr"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/stewid/xapr/network" class="social-count">
+        0
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="/stewid" class="url fn" itemprop="url" rel="author"><span itemprop="title">stewid</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="/stewid/xapr" class="js-current-repository" data-pjax="#js-repo-pjax-container">xapr</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline  ">
+        <div class="repository-sidebar clearfix">
+            
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/stewid/xapr/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/stewid/xapr" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /stewid/xapr">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/stewid/xapr/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /stewid/xapr/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/stewid/xapr/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /stewid/xapr/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/stewid/xapr/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /stewid/xapr/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/stewid/xapr/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /stewid/xapr/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+              <div class="only-with-full-nav">
+                  
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/stewid/xapr.git" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/stewid/xapr" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+<p class="clone-options">You can clone with
+  <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a> or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</p>
+
+
+
+                <a href="/stewid/xapr/archive/master.zip"
+                   class="btn btn-sm sidebar-button"
+                   aria-label="Download the contents of stewid/xapr as a zip file"
+                   title="Download the contents of stewid/xapr as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+<a href="/stewid/xapr/blob/5e4aaacebdafb0dba40cd9785d466c7a1a520c5d/README.md" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:417b4eb5006248fa2b4c6202b040d2de -->
+
+<div class="file-navigation js-zeroclipboard-container">
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <span class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master"
+    title="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/stewid/xapr/blob/master/README.md"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="btn-group right">
+    <a href="/stewid/xapr/find/master"
+          class="js-show-file-finder btn btn-sm empty-icon tooltipped tooltipped-s"
+          data-pjax
+          data-hotkey="t"
+          aria-label="Quickly jump between files">
+      <span class="octicon octicon-list-unordered"></span>
+    </a>
+    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+  </div>
+
+  <div class="breadcrumb js-zeroclipboard-target">
+    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/stewid/xapr" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">xapr</span></a></span></span><span class="separator">/</span><strong class="final-path">README.md</strong>
+  </div>
+</div>
+
+<include-fragment class="commit commit-loader file-history-tease" src="/stewid/xapr/contributors/master/README.md">
+  <div class="file-history-tease-header">
+    Fetching contributors&hellip;
+  </div>
+
+  <div class="participation">
+    <p class="loader-loading"><img alt="" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-EAF2F5-0bdc57d34b85c4a4de9d0d1db10cd70e8a95f33ff4f46c5a8c48b4bf4e5a9abe.gif" width="16" /></p>
+    <p class="loader-error">Cannot retrieve contributors at this time</p>
+  </div>
+</include-fragment>
+<div class="file">
+  <div class="file-header">
+    <div class="file-actions">
+
+      <div class="btn-group">
+        <a href="/stewid/xapr/raw/master/README.md" class="btn btn-sm " id="raw-url">Raw</a>
+          <a href="/stewid/xapr/blame/master/README.md" class="btn btn-sm js-update-url-with-hash">Blame</a>
+        <a href="/stewid/xapr/commits/master/README.md" class="btn btn-sm " rel="nofollow">History</a>
+      </div>
+
+
+          <button type="button" class="octicon-btn disabled tooltipped tooltipped-n" aria-label="You must be signed in to make or propose changes">
+            <span class="octicon octicon-pencil"></span>
+          </button>
+
+        <button type="button" class="octicon-btn octicon-btn-danger disabled tooltipped tooltipped-n" aria-label="You must be signed in to make or propose changes">
+          <span class="octicon octicon-trashcan"></span>
+        </button>
+    </div>
+
+    <div class="file-info">
+        188 lines (147 sloc)
+        <span class="file-info-divider"></span>
+      6.399 kb
+    </div>
+  </div>
+    <div id="readme" class="blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage"><p><a href="https://travis-ci.org/stewid/xapr"><img src="https://camo.githubusercontent.com/08d3efefb298c143c3aa035ee4b2344785775dde/68747470733a2f2f7472617669732d63692e6f72672f7374657769642f786170722e706e67" alt="Build Status" data-canonical-src="https://travis-ci.org/stewid/xapr.png" style="max-width:100%;"></a></p>
+
+<h1>
+<a id="user-content-introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h1>
+
+<p><code>xapr</code> is an R package that provides an interface to the
+<a href="http://xapian.org/">Xapian</a> search engine from R, allowing both
+indexing and retrievel operations. A great introduction to
+<a href="http://xapian.org/">Xapian</a> is the
+<a href="http://getting-started-with-xapian.readthedocs.org/en/latest/">Getting Started with Xapian</a>.</p>
+
+<h2>
+<a id="user-content-indexing" class="anchor" href="#indexing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Indexing</h2>
+
+<p>Index the content of a <code>data.frame</code> to documents with the Xapian
+search engine A <code>document</code> is the data returned from a search.</p>
+
+<p>The index plan is specified symbolically. An index plan has the form
+<code>data ~ terms</code> where <code>data</code> is the blob of data returned from a search
+and the <code>terms</code> are the basis for a search in Xapian. A first order
+term index the text in the column as free text. A specification of the
+form <code>prefix:term</code> indicates that the text in <code>term</code> should be
+indexed with the prefix <code>prefix</code>.</p>
+
+<p>The prefix is a short string at the beginning of the term to indicate
+which field the term indexes. Valid prefixes are: 'A' ,'D', 'E', 'G',
+'H', 'I', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
+'X', 'Y' and 'Z'. See <a href="http://xapian.org/docs/omega/termprefixes">http://xapian.org/docs/omega/termprefixes</a> for a
+list of conventional prefixes.</p>
+
+<p>The specification <code>prefix*term</code> is the same as <code>term +
+prefix:term</code>. The prefix <code>X</code> will create a user defined prefix by
+appending the uppercase <code>term</code> to <code>X</code>. The prefix <code>Q</code> will use data
+in the <code>term</code> column as a unique identifier for the document. <code>NA</code>
+values in indexed columns are skipped.</p>
+
+<p>No response e.g. <code>~ term + prefix:term</code> writes the row number as
+data to the document.</p>
+
+<p>The specification <code>~X*.</code> creates prefix terms with all columns plus
+free text.</p>
+
+<p>If the response contains one or more columns, e.g. <code>col_1 + col_2 ~
+X*.</code> the response is first converted to <code>JSON</code>. A compact form to
+convert all fields to <code>JSON</code> is to use <code>. ~ terms</code>. It is also
+possible to drop response fields e.g. <code>. - col_1 - col_2 ~ X*.</code> to
+include all fields in the response except <code>col_1</code> and <code>col_2</code>.</p>
+
+<h3>
+<a id="user-content-example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h3>
+
+<p>This is an <code>R</code> version of the <code>Python</code> example in the
+<a href="http://getting-started-with-xapian.readthedocs.org/en/latest/practical_example/index.html">Getting Started with Xapian</a></p>
+
+<p>We are going to build a simple search system based on museum catalogue
+data released under the Creative Commons Attribution-NonCommercial-
+ShareAlike license (<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</a>)
+by the Science Museum in London, UK.
+(<a href="http://api.sciencemuseum.org.uk/documentation/collections/">http://api.sciencemuseum.org.uk/documentation/collections/</a>)</p>
+
+<div class="highlight highlight-r"><pre>library(<span class="pl-smi">xapr</span>)
+
+<span class="pl-c">## The first 100 rows of the museum catalogue data is distributed with</span>
+<span class="pl-c">## the 'xapr' package</span>
+<span class="pl-smi">filename</span> <span class="pl-k">&lt;-</span> system.file(<span class="pl-s"><span class="pl-pds">"</span>extdata/NMSI_100.csv<span class="pl-pds">"</span></span>, <span class="pl-v">package</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>xapr<span class="pl-pds">"</span></span>)
+<span class="pl-smi">nmsi</span> <span class="pl-k">&lt;-</span> read.csv(<span class="pl-smi">filename</span>, <span class="pl-v">as.is</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>)
+
+<span class="pl-c">## Create a temporary directory to hold the database</span>
+<span class="pl-smi">path</span> <span class="pl-k">&lt;-</span> tempfile(<span class="pl-v">pattern</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>xapr-<span class="pl-pds">"</span></span>)
+dir.create(<span class="pl-smi">path</span>)
+
+<span class="pl-c">## Index the 'TITLE' and 'DESCRIPTION' fields with both a suitable</span>
+<span class="pl-c">## prefix and without a prefix for general search. Use the 'id_NUMBER'</span>
+<span class="pl-c">## as unique identifier. Store all the fields as JSON for display</span>
+<span class="pl-c">## purposes.</span>
+<span class="pl-smi">db</span> <span class="pl-k">&lt;-</span> xindex(. <span class="pl-k">~</span> <span class="pl-smi">S</span><span class="pl-k">*</span><span class="pl-smi">TITLE</span> <span class="pl-k">+</span> <span class="pl-smi">X</span><span class="pl-k">*</span><span class="pl-smi">DESCRIPTION</span> <span class="pl-k">+</span> <span class="pl-smi">Q</span><span class="pl-k">:</span><span class="pl-smi">id_NUMBER</span>, <span class="pl-smi">nmsi</span>, <span class="pl-smi">path</span>)
+
+<span class="pl-c">## Display a summary of the Xapian database</span>
+summary(<span class="pl-smi">db</span>)</pre></div>
+
+<pre><code>#&gt; Xapian database:  /tmp/RtmpQj6AiY/xapr-42511a902906 
+#&gt; 
+#&gt; UUID = b4f5fc81-5f84-40d6-886e-2c096a09c232 
+#&gt; number of documents = 100 
+#&gt; average document length = 52 
+#&gt; document length lower bound = 16 
+#&gt; document length upper bound = 136 
+#&gt; highest document id ever used = 100 
+#&gt; has positional information = TRUE
+</code></pre>
+
+<div class="highlight highlight-r"><pre><span class="pl-c">## Run a search and display docid (rowname) and TITLE from each match</span>
+xsearch(<span class="pl-smi">db</span>, <span class="pl-s"><span class="pl-pds">"</span>watch<span class="pl-pds">"</span></span>, <span class="pl-smi">TITLE</span> <span class="pl-k">~</span> .)</pre></div>
+
+<pre><code>#&gt;                                                           TITLE
+#&gt; 4                          Watch with Chinese duplex escapement
+#&gt; 18  Solar/Sidereal verge watch with epicyclic maintaining power
+#&gt; 13                                             Watch timer by P
+#&gt; 33 A device by Favag of Neuchatel which enables a stop watch to
+#&gt; 15  Ingersoll "Dan Dare" automaton pocket watch with pin-pallet
+#&gt; 36             Universal 'Tri-Compax' chronographic wrist watch
+#&gt; 46  Model by Dent of mechanism for setting hands and winding up
+</code></pre>
+
+<div class="highlight highlight-r"><pre><span class="pl-c">## Run a search with multiple words</span>
+xsearch(<span class="pl-smi">db</span>, <span class="pl-s"><span class="pl-pds">"</span>Dent watch<span class="pl-pds">"</span></span>, <span class="pl-smi">TITLE</span> <span class="pl-k">~</span> .)</pre></div>
+
+<pre><code>#&gt;                                                                     TITLE
+#&gt; 46            Model by Dent of mechanism for setting hands and winding up
+#&gt; 4                                    Watch with Chinese duplex escapement
+#&gt; 18            Solar/Sidereal verge watch with epicyclic maintaining power
+#&gt; 13                                                       Watch timer by P
+#&gt; 94                                Model of a Lever Escapement , 1850-1883
+#&gt; 33           A device by Favag of Neuchatel which enables a stop watch to
+#&gt; 93                       Model of Graham's Cylinder Escapement, 1850-1883
+#&gt; 15            Ingersoll "Dan Dare" automaton pocket watch with pin-pallet
+#&gt; 36                       Universal 'Tri-Compax' chronographic wrist watch
+#&gt; 86 Model representing Earnshaw's detent chronometer escapement, 1950-1883
+</code></pre>
+
+<div class="highlight highlight-r"><pre><span class="pl-c">## Run a search with prefix</span>
+xsearch(<span class="pl-smi">db</span>, <span class="pl-s"><span class="pl-pds">"</span>title:sunwatch<span class="pl-pds">"</span></span>, <span class="pl-smi">TITLE</span> <span class="pl-k">~</span> <span class="pl-smi">title</span><span class="pl-k">:</span><span class="pl-smi">S</span>)</pre></div>
+
+<pre><code>#&gt;                                    TITLE
+#&gt; 1 Ansonia Sunwatch (pocket compass dial)
+</code></pre>
+
+<div class="highlight highlight-r"><pre><span class="pl-c">## Run a search with multiple prefixes</span>
+xsearch(<span class="pl-smi">db</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>description:<span class="pl-cce">\"</span>leather case<span class="pl-cce">\"</span> AND title:sundial<span class="pl-pds">"</span></span>,
+        <span class="pl-smi">TITLE</span> <span class="pl-k">~</span> <span class="pl-smi">title</span><span class="pl-k">:</span><span class="pl-smi">S</span> <span class="pl-k">+</span> <span class="pl-smi">description</span><span class="pl-k">:</span><span class="pl-smi">XDESCRIPTION</span>)</pre></div>
+
+<pre><code>#&gt;                                      TITLE
+#&gt; 55 Silver altitude sundial in leather case
+</code></pre>
+
+<h2>
+<a id="user-content-installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>The development files for the <code>Xapian</code> search engine must be
+installed.</p>
+
+<pre><code>$ sudo apt-get install libxapian-dev
+</code></pre>
+
+<p>To install the development version of <code>xapr</code>, it's easiest to use the
+devtools package:</p>
+
+<div class="highlight highlight-r"><pre><span class="pl-c"># install.packages("devtools")</span>
+library(<span class="pl-smi">devtools</span>)
+install_github(<span class="pl-s"><span class="pl-pds">"</span>stewid/xapr<span class="pl-pds">"</span></span>)</pre></div>
+
+<p>Another alternative is to use <code>git</code> and <code>make</code></p>
+
+<pre><code>$ git clone https://github.com/stewid/xapr.git
+$ cd xapr
+$ make install
+</code></pre>
+
+<p><strong>NOTE:</strong> The package is in a very early development phase. Functions
+and documentation may be incomplete and subject to
+change. Suggestions, bugs, forks and pull requests are
+appreciated. Get in touch.</p>
+
+<h1>
+<a id="user-content-license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
+
+<p>The <code>xapr</code> package is licensed under the GPL (&gt;= 2). See these files
+for additional details:</p>
+
+<ul class="task-list">
+<li>
+<a href="/stewid/xapr/blob/master/LICENSE">LICENSE</a>     - <code>xapr</code> package license</li>
+</ul>
+</article>
+  </div>
+
+</div>
+
+<a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" style="display:none">Jump to Line</a>
+<div id="jump-to-line" style="display:none">
+  <form accept-charset="UTF-8" class="js-jump-to-line-form">
+    <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" autofocus>
+    <button type="submit" class="btn">Go</button>
+  </form>
+</div>
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.05885s from github-fe131-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-d22b59d0085e83b7549ba4341ec9e68f80c2f29c8e49213ee182003dc8d568c6.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-0bc0f45c838b5d9d25bc071d2a4b0abe759a093392087dce55cd2caa00ea4f36.js"></script>
+      
+      
+
+  </body>
+</html>
+

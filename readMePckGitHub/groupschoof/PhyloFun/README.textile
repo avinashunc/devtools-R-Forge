@@ -1,0 +1,760 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    
+    <title>PhyloFun/README.textile at master · groupschoof/PhyloFun · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="groupschoof/PhyloFun" name="twitter:title" /><meta content="PhyloFun - Function prediction of uncharacterized proteins using their evolutionary history. " name="twitter:description" /><meta content="https://avatars1.githubusercontent.com/u/1516952?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars1.githubusercontent.com/u/1516952?v=3&amp;s=400" property="og:image" /><meta content="groupschoof/PhyloFun" property="og:title" /><meta content="https://github.com/groupschoof/PhyloFun" property="og:url" /><meta content="PhyloFun - Function prediction of uncharacterized proteins using their evolutionary history. " property="og:description" />
+      <meta name="browser-stats-url" content="/_stats">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="C1BEC102:54B6:6577EF1:5510300C" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, blob#show" name="analytics-event" />
+
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="xauR29QLSpaDLl0L0JmJN3S85Tzf7q3j9BmiPHaZzFOV67VpEeLKg+HX0j5v0cH88GnQtAgNBLc0D1Wy610XkQ==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-099e0ecc2851c8aca89ef6dafa191df3b0f2a2c8ad34e134c5473ca1ba0a59b2.css" media="all" rel="stylesheet" />
+    <link href="https://assets-cdn.github.com/assets/github2-1171344316fc088255ee2a06c271d14240f1a4e06985fe9e897762947872e858.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="c0f32272c66bfb10ed7d46b7c88c6299">
+
+      
+  <meta name="description" content="PhyloFun - Function prediction of uncharacterized proteins using their evolutionary history. ">
+  <meta name="go-import" content="github.com/groupschoof/PhyloFun git https://github.com/groupschoof/PhyloFun.git">
+
+  <meta content="1516952" name="octolytics-dimension-user_id" /><meta content="groupschoof" name="octolytics-dimension-user_login" /><meta content="5123280" name="octolytics-dimension-repository_id" /><meta content="groupschoof/PhyloFun" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="5123280" name="octolytics-dimension-repository_network_root_id" /><meta content="groupschoof/PhyloFun" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/groupschoof/PhyloFun/commits/master.atom" rel="alternate" title="Recent Commits to PhyloFun:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public page-blob">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fgroupschoof%2FPhyloFun%2Fblob%2Fmaster%2FREADME.textile" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <form accept-charset="UTF-8" action="/groupschoof/PhyloFun/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/groupschoof/PhyloFun/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <input type="text"
+    class="js-site-search-field is-clearable"
+    data-hotkey="s"
+    name="q"
+    placeholder="Search"
+    data-global-scope-placeholder="Search GitHub"
+    data-repo-scope-placeholder="Search"
+    tabindex="1"
+    autocapitalize="off">
+  <div class="scope-badge">This repository</div>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/blog" data-ga-click="(Logged out) Header, go to blog, text:blog">Blog</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fgroupschoof%2FPhyloFun"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/groupschoof/PhyloFun/watchers">
+    1
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fgroupschoof%2FPhyloFun"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/groupschoof/PhyloFun/stargazers">
+      1
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fgroupschoof%2FPhyloFun"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/groupschoof/PhyloFun/network" class="social-count">
+        0
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="/groupschoof" class="url fn" itemprop="url" rel="author"><span itemprop="title">groupschoof</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="/groupschoof/PhyloFun" class="js-current-repository" data-pjax="#js-repo-pjax-container">PhyloFun</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline  ">
+        <div class="repository-sidebar clearfix">
+            
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/groupschoof/PhyloFun/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/groupschoof/PhyloFun" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /groupschoof/PhyloFun">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/groupschoof/PhyloFun/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /groupschoof/PhyloFun/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/groupschoof/PhyloFun/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /groupschoof/PhyloFun/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/groupschoof/PhyloFun/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /groupschoof/PhyloFun/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/groupschoof/PhyloFun/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /groupschoof/PhyloFun/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+              <div class="only-with-full-nav">
+                  
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/groupschoof/PhyloFun.git" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/groupschoof/PhyloFun" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+<p class="clone-options">You can clone with
+  <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a> or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</p>
+
+
+
+                <a href="/groupschoof/PhyloFun/archive/master.zip"
+                   class="btn btn-sm sidebar-button"
+                   aria-label="Download the contents of groupschoof/PhyloFun as a zip file"
+                   title="Download the contents of groupschoof/PhyloFun as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+<a href="/groupschoof/PhyloFun/blob/fd41425588327f9c2f535a58a35ef19ed3c5f634/README.textile" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:019bbcb83ada371fe830b220b9d50fc6 -->
+
+<div class="file-navigation js-zeroclipboard-container">
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <span class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master"
+    title="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/before_removing_domain_architecture/README.textile"
+               data-name="before_removing_domain_architecture"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="before_removing_domain_architecture">
+                before_removing_domain_architecture
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/blast_results/README.textile"
+               data-name="blast_results"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="blast_results">
+                blast_results
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/extend_go_annos_with_parents_rcpp/README.textile"
+               data-name="extend_go_annos_with_parents_rcpp"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="extend_go_annos_with_parents_rcpp">
+                extend_go_annos_with_parents_rcpp
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/extend_go_annos_with_parents_sql/README.textile"
+               data-name="extend_go_annos_with_parents_sql"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="extend_go_annos_with_parents_sql">
+                extend_go_annos_with_parents_sql
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/filter_msa/README.textile"
+               data-name="filter_msa"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="filter_msa">
+                filter_msa
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/identify_cause_headless/README.textile"
+               data-name="identify_cause_headless"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="identify_cause_headless">
+                identify_cause_headless
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/incl_db_go_annos/README.textile"
+               data-name="incl_db_go_annos"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="incl_db_go_annos">
+                incl_db_go_annos
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/groupschoof/PhyloFun/blob/master/README.textile"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/only_sequence_dists_n_go_terms/README.textile"
+               data-name="only_sequence_dists_n_go_terms"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="only_sequence_dists_n_go_terms">
+                only_sequence_dists_n_go_terms
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/rcpp/README.textile"
+               data-name="rcpp"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="rcpp">
+                rcpp
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/round_branch_lengths/README.textile"
+               data-name="round_branch_lengths"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="round_branch_lengths">
+                round_branch_lengths
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/run_only_on_queries_wt_hits/README.textile"
+               data-name="run_only_on_queries_wt_hits"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="run_only_on_queries_wt_hits">
+                run_only_on_queries_wt_hits
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/test_for_loop_in_runPhyloFun/README.textile"
+               data-name="test_for_loop_in_runPhyloFun"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="test_for_loop_in_runPhyloFun">
+                test_for_loop_in_runPhyloFun
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/test_local_go_db/README.textile"
+               data-name="test_local_go_db"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="test_local_go_db">
+                test_local_go_db
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/test_selector/README.textile"
+               data-name="test_selector"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="test_selector">
+                test_selector
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/tests_cleanup/README.textile"
+               data-name="tests_cleanup"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="tests_cleanup">
+                tests_cleanup
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/time_measurements/README.textile"
+               data-name="time_measurements"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="time_measurements">
+                time_measurements
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/groupschoof/PhyloFun/blob/transposed_annotation_matrix/README.textile"
+               data-name="transposed_annotation_matrix"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="transposed_annotation_matrix">
+                transposed_annotation_matrix
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="btn-group right">
+    <a href="/groupschoof/PhyloFun/find/master"
+          class="js-show-file-finder btn btn-sm empty-icon tooltipped tooltipped-s"
+          data-pjax
+          data-hotkey="t"
+          aria-label="Quickly jump between files">
+      <span class="octicon octicon-list-unordered"></span>
+    </a>
+    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+  </div>
+
+  <div class="breadcrumb js-zeroclipboard-target">
+    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/groupschoof/PhyloFun" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">PhyloFun</span></a></span></span><span class="separator">/</span><strong class="final-path">README.textile</strong>
+  </div>
+</div>
+
+<include-fragment class="commit commit-loader file-history-tease" src="/groupschoof/PhyloFun/contributors/master/README.textile">
+  <div class="file-history-tease-header">
+    Fetching contributors&hellip;
+  </div>
+
+  <div class="participation">
+    <p class="loader-loading"><img alt="" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-EAF2F5-0bdc57d34b85c4a4de9d0d1db10cd70e8a95f33ff4f46c5a8c48b4bf4e5a9abe.gif" width="16" /></p>
+    <p class="loader-error">Cannot retrieve contributors at this time</p>
+  </div>
+</include-fragment>
+<div class="file">
+  <div class="file-header">
+    <div class="file-actions">
+
+      <div class="btn-group">
+        <a href="/groupschoof/PhyloFun/raw/master/README.textile" class="btn btn-sm " id="raw-url">Raw</a>
+          <a href="/groupschoof/PhyloFun/blame/master/README.textile" class="btn btn-sm js-update-url-with-hash">Blame</a>
+        <a href="/groupschoof/PhyloFun/commits/master/README.textile" class="btn btn-sm " rel="nofollow">History</a>
+      </div>
+
+
+          <button type="button" class="octicon-btn disabled tooltipped tooltipped-n" aria-label="You must be signed in to make or propose changes">
+            <span class="octicon octicon-pencil"></span>
+          </button>
+
+        <button type="button" class="octicon-btn octicon-btn-danger disabled tooltipped tooltipped-n" aria-label="You must be signed in to make or propose changes">
+          <span class="octicon octicon-trashcan"></span>
+        </button>
+    </div>
+
+    <div class="file-info">
+        84 lines (53 sloc)
+        <span class="file-info-divider"></span>
+      5.364 kb
+    </div>
+  </div>
+    <div id="readme" class="blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
+<a id="user-content-phylofun" class="anchor" href="#phylofun" aria-hidden="true"><span class="octicon octicon-link"></span></a>PhyloFun</h1>
+<h2>
+<a id="user-content-abstract" class="anchor" href="#abstract" aria-hidden="true"><span class="octicon octicon-link"></span></a>Abstract</h2>
+<p>Protein function has often been transferred from characterized proteins to novel proteins based on sequence similarity, e.g. using the best BLAST hit. Based on the SIFTER phylogenomic tool (1), we use a statistical inference algorithm to propagate e.g. Gene Ontology (GO) terms inside a phylogenetic tree, scoring branch lengths and evidence codes of GO annotations. Here PhyloFun computes the likelihood of a GO term being inherited on a given phylogenetic branch based on probability distributions that have been carefully calibrated for each GO term separately.</p>
+<p>In order to generate accurate phylogenetic trees that contain a maximum of functional information at reasonable computational costs, we implemented a reusable workflow that, for a given input protein, searches candidate orthologs with known functions, adds paralogs so that duplications can be detected reliably and builds a maximum likelihood phylogenetic tree from a filtered multiple alignment. This tree is then used as input to the inference algorithm which outputs, for each protein in the tree, a probability for assigning each GO term occurring in the tree.</p>
+<p>We call this new phylogenomic workflow for protein function prediction <strong>PhyloFun</strong>.</p>
+<h2>
+<a id="user-content-install-phylofun" class="anchor" href="#install-phylofun" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install PhyloFun</h2>
+<p>PhyloFun requires <code>R</code> version <code>2.15.2</code> <em>or greater</em>.</p>
+<h3>
+<a id="user-content-phylofun-requires-three-external-tools" class="anchor" href="#phylofun-requires-three-external-tools" aria-hidden="true"><span class="octicon octicon-link"></span></a>PhyloFun requires three external tools:</h3>
+<ul>
+	<li>MAFFT <a href="http://mafft.cbrc.jp/alignment/software/">http://mafft.cbrc.jp/alignment/software/</a>
+</li>
+	<li>GBlocks <a href="http://molevol.cmima.csic.es/castresana/Gblocks.html">http://molevol.cmima.csic.es/castresana/Gblocks.html</a>
+</li>
+	<li>FastTree[MP] <a href="http://www.microbesonline.org/fasttree/">http://www.microbesonline.org/fasttree/</a>
+</li>
+</ul>
+<p>Make sure all three programms are installed and in your search path. That means, that from an interactive <code>R</code> shell the following must work:<br>
+<code>system( "mafft" )</code><br>
+<code>system( "GBlocks" )</code><br>
+<code>system( "FastTree" )</code> or, if you installed the preferred multi processor (OpenMP) version of FastTree:<br>
+<code>system( "FastTreeMP" )</code></p>
+<h3>
+<a id="user-content-install-required-r-packages" class="anchor" href="#install-required-r-packages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install required R packages:</h3>
+<p>From within R execute the followin code to install the R packages PhyloFun requires.<br>
+</p><pre><code>source("http://bioconductor.org/biocLite.R")
+biocLite( c(
+  "Rcpp", "Biostrings", "RCurl", "RMySQL", "XML", "ape", "biomaRt", "brew",
+  "gRain", "phangorn", "rredis", "stringr", "xtable"
+) )</code></pre>
+<h3>
+<a id="user-content-install-the-phylofun-r-package-itself" class="anchor" href="#install-the-phylofun-r-package-itself" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install the PhyloFun R package itself:</h3>
+<ul>
+	<li>Download source: <code>git clone git://github.com/groupschoof/PhyloFun.git ./PhyloFun</code>
+</li>
+	<li>Install: <code>R CMD INSTALL PhyloFun</code>
+</li>
+</ul>
+<h2>
+<a id="user-content-run-phylofun" class="anchor" href="#run-phylofun" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run PhyloFun</h2>
+<p>Please <em>note</em> that PhyloFun requires a working internet connection to run properly!</p>
+<p>The PhyloFun R package comes with a number of executable Rscripts, all stored in folder <code>exec/</code>.</p>
+<p>After installation find the path to the installed PhyloFun package. Open an interactive <code>R</code> shell and type <code>.path.package("PhyloFun")</code>.<br>
+The returned path can than be used to run the provided Rscript <code>runPhyloFun.R</code> as follows:</p>
+<p><code>Rscript &lt;path_to_your_PhyloFun_installation&gt;/exec/runPhyloFun.R &lt;arguments&gt;</code></p>
+<h3>
+<a id="user-content-phylofun-command-line-arguments" class="anchor" href="#phylofun-command-line-arguments" aria-hidden="true"><span class="octicon octicon-link"></span></a>PhyloFun command line arguments</h3>
+<p>The arguments are printed whenever the Rscript is executed.</p>
+<ul>
+	<li>
+<code>-q</code> path to Query Proteins’ amino acid sequences in fasta format</li>
+	<li>
+<code>-p</code> or <code>-b</code> path to sequence similarity search results. Provide <code>-b</code> for BLAST tables (tabular output <code>-m 8</code>) or <code>-p</code> for PHMMER (HMMER-3) search results in <code>--tblout</code> format.</li>
+	<li>
+<code>-e</code> provide comma separated list of GO evidence codes you want to be accepted as “trusted”, e.g. <code>-e ISO,RCA</code> or provide <code>-e ALL</code> if any evidence code is good for you. See <a href="http://www.geneontology.org/GO.evidence.shtml">http://www.geneontology.org/GO.evidence.shtml</a> for details on GO evidence codes.</li>
+	<li>
+<code>-n</code> use the n best hits for function prediction. If you want to speed up PhyloFun, reduce this number to e.g. <code>-n 250</code>
+</li>
+	<li>
+<code>-h true</code> to print out statistics of each Query Proteins’ found homologs – result file <code>homologs_stats.txt</code>
+</li>
+	<li>
+<code>-m true</code> to print out statistics of each generated Multiple Sequnce Alignment (MSA) – result file <code>msa_stats.txt</code>
+</li>
+	<li>
+<code>-r true</code> to generate an HTML report of PhyloFun’s results</li>
+</ul>
+<h3>
+<a id="user-content-a-short-test-run-can-be-done-as-follows" class="anchor" href="#a-short-test-run-can-be-done-as-follows" aria-hidden="true"><span class="octicon octicon-link"></span></a>A short test run can be done as follows</h3>
+<pre><code>Rscript &lt;path_to_your_PhyloFun_installation&gt;/exec/runPhyloFun.R -q &lt;path_to_your_PhyloFun_installation&gt;/protein_1.fasta -b &lt;path_to_your_PhyloFun_installation&gt;/protein_1_blastout.tbl -f FastTree -h true -r true -m true</code></pre>
+<p><em>Note</em> that depending on you installation of FastTree you’ll have to provide either <code>-f FastTree</code> or the faster multi processor version of if <code>-f FastTreeMP</code>.</p>
+<p>Results of this test run will be written into the folder <code>Protein_1/</code> in your current directory.</p>
+<h3>
+<a id="user-content-generate-phylofuns-input" class="anchor" href="#generate-phylofuns-input" aria-hidden="true"><span class="octicon octicon-link"></span></a>Generate PhyloFun’s input</h3>
+<p>The only thing you have to do, is to run <em>either</em> <strong>BLAST</strong> or <strong>PHMMER</strong> for your query proteins against the provided database of UniprotKB proteins with trusted Gene Ontology term annotations (<strong>trusted-UniKB</strong>).</p>
+<ol>
+	<li>First copy and unpack <strong>trusted-UniKB</strong> from PhyloFun to your directory of choice. <code>cp inst/ukb_proteins_with_trusted_go_annos.fasta.bz2 path/to/your/directory</code>, and then unpack it <code>bunzip2 ukb_proteins_with_trusted_go_annos.fasta.bz2</code>
+</li>
+	<li>Now run BLAST or PHMMER. If you choose BLAST you must provide its output as a table, use the command line switch <code>-m 8</code>. If you choose PHMMER a tabular result file will also be required and can be obtained by usage of the command line argument <code>--tblout</code>.</li>
+	<li>Recommended E-Value cutoffs for BLAST are <code>-e 1</code> and for PHMMER <code>-E 0.000001</code>
+</li>
+</ol>
+<h2>
+<a id="user-content-coding-style-guide" class="anchor" href="#coding-style-guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Coding style guide</h2>
+<p>PhyloFun’s code mostly follows the google style guide for R:<br>
+<a href="http://google-styleguide.googlecode.com/svn/trunk/google-r-style.html">http://google-styleguide.googlecode.com/svn/trunk/google-r-style.html</a></p></article>
+  </div>
+
+</div>
+
+<a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" style="display:none">Jump to Line</a>
+<div id="jump-to-line" style="display:none">
+  <form accept-charset="UTF-8" class="js-jump-to-line-form">
+    <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" autofocus>
+    <button type="submit" class="btn">Go</button>
+  </form>
+</div>
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.03407s from github-fe138-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-d22b59d0085e83b7549ba4341ec9e68f80c2f29c8e49213ee182003dc8d568c6.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-0bc0f45c838b5d9d25bc071d2a4b0abe759a093392087dce55cd2caa00ea4f36.js"></script>
+      
+      
+
+  </body>
+</html>
+

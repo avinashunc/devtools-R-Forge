@@ -1,0 +1,1033 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    
+    <title>openPoland/README_cache at master · kalimu/openPoland · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="kalimu/openPoland" name="twitter:title" /><meta content="openPoland - R package for communication with OpenPoland.net API - a gate to open data in Poland" name="twitter:description" /><meta content="https://avatars2.githubusercontent.com/u/2522236?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars2.githubusercontent.com/u/2522236?v=3&amp;s=400" property="og:image" /><meta content="kalimu/openPoland" property="og:title" /><meta content="https://github.com/kalimu/openPoland" property="og:url" /><meta content="openPoland - R package for communication with OpenPoland.net API - a gate to open data in Poland" property="og:description" />
+      <meta name="browser-stats-url" content="/_stats">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="C1BEC102:4D92:2E3EEB0:55104DAB" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, files#disambiguate" name="analytics-event" />
+
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="Wjv0rdJIoeGYza9PXx8ZGUmQAo6fMZRBrW2M+chv66+EStmGemxmhFRIB6LHFU0e/+sg2/k3ICBqScmlpPKQyQ==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-099e0ecc2851c8aca89ef6dafa191df3b0f2a2c8ad34e134c5473ca1ba0a59b2.css" media="all" rel="stylesheet" />
+    <link href="https://assets-cdn.github.com/assets/github2-1171344316fc088255ee2a06c271d14240f1a4e06985fe9e897762947872e858.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="82253ae49d1e9c329beb53cc9fa7de35">
+
+      
+  <meta name="description" content="openPoland - R package for communication with OpenPoland.net API - a gate to open data in Poland">
+  <meta name="go-import" content="github.com/kalimu/openPoland git https://github.com/kalimu/openPoland.git">
+
+  <meta content="2522236" name="octolytics-dimension-user_id" /><meta content="kalimu" name="octolytics-dimension-user_login" /><meta content="24110845" name="octolytics-dimension-repository_id" /><meta content="kalimu/openPoland" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="24110845" name="octolytics-dimension-repository_network_root_id" /><meta content="kalimu/openPoland" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/kalimu/openPoland/commits/master.atom" rel="alternate" title="Recent Commits to openPoland:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fkalimu%2FopenPoland%2Ftree%2Fmaster%2FREADME_cache" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <form accept-charset="UTF-8" action="/kalimu/openPoland/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/kalimu/openPoland/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <input type="text"
+    class="js-site-search-field is-clearable"
+    data-hotkey="s"
+    name="q"
+    placeholder="Search"
+    data-global-scope-placeholder="Search GitHub"
+    data-repo-scope-placeholder="Search"
+    tabindex="1"
+    autocapitalize="off">
+  <div class="scope-badge">This repository</div>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/blog" data-ga-click="(Logged out) Header, go to blog, text:blog">Blog</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fkalimu%2FopenPoland"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/kalimu/openPoland/watchers">
+    1
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fkalimu%2FopenPoland"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/kalimu/openPoland/stargazers">
+      1
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fkalimu%2FopenPoland"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/kalimu/openPoland/network" class="social-count">
+        0
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="/kalimu" class="url fn" itemprop="url" rel="author"><span itemprop="title">kalimu</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="/kalimu/openPoland" class="js-current-repository" data-pjax="#js-repo-pjax-container">openPoland</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline  ">
+        <div class="repository-sidebar clearfix">
+            
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/kalimu/openPoland/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/kalimu/openPoland" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /kalimu/openPoland">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/kalimu/openPoland/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /kalimu/openPoland/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/kalimu/openPoland/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /kalimu/openPoland/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/kalimu/openPoland/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /kalimu/openPoland/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/kalimu/openPoland/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /kalimu/openPoland/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+              <div class="only-with-full-nav">
+                  
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/kalimu/openPoland.git" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/kalimu/openPoland" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+<p class="clone-options">You can clone with
+  <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a> or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</p>
+
+
+
+                <a href="/kalimu/openPoland/archive/master.zip"
+                   class="btn btn-sm sidebar-button"
+                   aria-label="Download the contents of kalimu/openPoland as a zip file"
+                   title="Download the contents of kalimu/openPoland as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+<div class="file-navigation">
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <span class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master"
+    title="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/kalimu/openPoland/tree/gh-pages/README_cache"
+               data-name="gh-pages"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="gh-pages">
+                gh-pages
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/kalimu/openPoland/tree/master/README_cache"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/kalimu/openPoland/tree/v0.0.1/README_cache"
+                 data-name="v0.0.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.0.1">v0.0.1</a>
+            </div>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="btn-group right">
+    <a href="/kalimu/openPoland/find/master" data-pjax data-hotkey="t" class="js-show-file-finder btn btn-sm empty-icon tooltipped tooltipped-s" aria-label="Quickly jump between files">
+      <span class="octicon octicon-list-unordered"></span>
+    </a>
+    <a href="/kalimu/openPoland/commits/master/README_cache" class="btn btn-sm empty-icon tooltipped tooltipped-s" aria-label="Browse commits for this branch">
+      <span class="octicon octicon-history"></span>
+    </a>
+  </div>
+
+  <div class="breadcrumb"><span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/kalimu/openPoland" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">openPoland</span></a></span></span><span class="separator">/</span><strong class="final-path">README_cache</strong><span class="separator">/</span>
+    <a class="btn-link disabled tooltipped tooltipped-e" href="#" aria-label="You must be signed in to make or propose changes">
+      <span class="octicon octicon-plus"></span>
+    </a>
+</div>
+
+</div>
+
+
+
+  <include-fragment class="commit commit-loader commit-tease" src="/kalimu/openPoland/tree-commit/d68115a9924f751496bb67ea2ae7b67e1b1ea15b/README_cache">
+    <p class="commit-title blank">
+      Fetching latest commit…
+    </p>
+    <div class="commit-meta">
+      <p class="loader-loading"><img alt="" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-EAF2F5-0bdc57d34b85c4a4de9d0d1db10cd70e8a95f33ff4f46c5a8c48b4bf4e5a9abe.gif" width="16" /></p>
+      <p class="loader-error">Cannot retrieve the latest commit at this time</p>
+    </div>
+</include-fragment>
+  
+<include-fragment class="file-wrap" src="/kalimu/openPoland/file-list/master/README_cache">
+
+  <table class="files" data-pjax>
+      <tr class="up-tree">
+        <td></td>
+        <td><a href="/kalimu/openPoland" rel="nofollow" title="Go to parent directory">..</a></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><span class="octicon octicon-alert"></span></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/__packages" class="js-directory-link" id="93d1054a56498e09adab2dfa7dd0fc44-402e3be56b10e61bd98c5965d73a3f60b9c261b9" title="__packages">__packages</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-10_8228eac298bf4998abc90b57ec14addc.RData" class="js-directory-link" id="a2ce84382b6b24dca7f4b21ded250615-58393619299b235e68afbeb0cade4a2684f1e7a8" title="unnamed-chunk-10_8228eac298bf4998abc90b57ec14addc.RData">unnamed-chunk-10_8228eac298bf4998abc90b57ec14addc.RData</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-10_8228eac298bf4998abc90b57ec14addc.rdb" class="js-directory-link" id="da2fa18602b62b806f84031b3738d276-424dee6e887ccb51ff5c1548c619339e8a644346" title="unnamed-chunk-10_8228eac298bf4998abc90b57ec14addc.rdb">unnamed-chunk-10_8228eac298bf4998abc90b57ec14addc.rdb</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-10_8228eac298bf4998abc90b57ec14addc.rdx" class="js-directory-link" id="84a8a87379a166747d931522520949bb-3f2b5b3401bac5a0398d45d42a58ed3e920897c5" title="unnamed-chunk-10_8228eac298bf4998abc90b57ec14addc.rdx">unnamed-chunk-10_8228eac298bf4998abc90b57ec14addc.rdx</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-11_4594f796a26aec4da18d9a037292b48c.RData" class="js-directory-link" id="6f371a87dc55aa75517601319821d320-8d61be858b45f20811265987f8a56e5959b4bc2c" title="unnamed-chunk-11_4594f796a26aec4da18d9a037292b48c.RData">unnamed-chunk-11_4594f796a26aec4da18d9a037292b48c.RData</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-11_4594f796a26aec4da18d9a037292b48c.rdb" class="js-directory-link" id="b0f2357fcbae9ff66dc9a8dac057e5cb-5ba14c0434ab7b0eac171c30c0ee43d00408b029" title="unnamed-chunk-11_4594f796a26aec4da18d9a037292b48c.rdb">unnamed-chunk-11_4594f796a26aec4da18d9a037292b48c.rdb</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-11_4594f796a26aec4da18d9a037292b48c.rdx" class="js-directory-link" id="eeb22d151bd2d7d19e06223a37f34f09-5f2d1e6f8b5895e80ece578dc8f6778852402961" title="unnamed-chunk-11_4594f796a26aec4da18d9a037292b48c.rdx">unnamed-chunk-11_4594f796a26aec4da18d9a037292b48c.rdx</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-12_0b804e897e443fa394594f3282ef3a5b.RData" class="js-directory-link" id="98705ff69f2ff6b4f6d66f7980637f1c-98866c9f7371d68f18e42c798c2e47f24873bd36" title="unnamed-chunk-12_0b804e897e443fa394594f3282ef3a5b.RData">unnamed-chunk-12_0b804e897e443fa394594f3282ef3a5b.RData</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-12_0b804e897e443fa394594f3282ef3a5b.rdb" class="js-directory-link" id="37a7c591b0e5b3ed4d25437f28728bd3-4f5c0ecaab8f913ca891e172947b091210ef7497" title="unnamed-chunk-12_0b804e897e443fa394594f3282ef3a5b.rdb">unnamed-chunk-12_0b804e897e443fa394594f3282ef3a5b.rdb</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-12_0b804e897e443fa394594f3282ef3a5b.rdx" class="js-directory-link" id="a98ab661a80efc82820effb69ec00e30-e4bf73cff00cf7f718f92ed92ffb3924f3250ef2" title="unnamed-chunk-12_0b804e897e443fa394594f3282ef3a5b.rdx">unnamed-chunk-12_0b804e897e443fa394594f3282ef3a5b.rdx</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-13_d5efb3c72fb842373e66d32652dcdc67.RData" class="js-directory-link" id="35d568cbb946974d6c7b19ae6c17386f-cb4a554f7b5ceac69d5ed53603dacb728d8cc43c" title="unnamed-chunk-13_d5efb3c72fb842373e66d32652dcdc67.RData">unnamed-chunk-13_d5efb3c72fb842373e66d32652dcdc67.RData</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-13_d5efb3c72fb842373e66d32652dcdc67.rdb" class="js-directory-link" id="2b86fe6c69ea976d87aa43f78beb7894-67afd908cee81c0c411c18677672c090ff960414" title="unnamed-chunk-13_d5efb3c72fb842373e66d32652dcdc67.rdb">unnamed-chunk-13_d5efb3c72fb842373e66d32652dcdc67.rdb</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-13_d5efb3c72fb842373e66d32652dcdc67.rdx" class="js-directory-link" id="903988ecaa729a481d15de18a86b4463-abeee46794b8d7c7a96d8c5fe41ccfefeea98d8c" title="unnamed-chunk-13_d5efb3c72fb842373e66d32652dcdc67.rdx">unnamed-chunk-13_d5efb3c72fb842373e66d32652dcdc67.rdx</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-2_a0611fbf7a60329190d8cfb2b7902887.RData" class="js-directory-link" id="9ed044fc7a9769555a7cc7e08afe90da-7880706c080f5f6e8feac59825f3a1edcd5fafc0" title="unnamed-chunk-2_a0611fbf7a60329190d8cfb2b7902887.RData">unnamed-chunk-2_a0611fbf7a60329190d8cfb2b7902887.RData</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-2_a0611fbf7a60329190d8cfb2b7902887.rdb" class="js-directory-link" id="c1fae94854680cbd9cad6eb3cb9eb682-e69de29bb2d1d6434b8b29ae775ad8c2e48c5391" title="unnamed-chunk-2_a0611fbf7a60329190d8cfb2b7902887.rdb">unnamed-chunk-2_a0611fbf7a60329190d8cfb2b7902887.rdb</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-2_a0611fbf7a60329190d8cfb2b7902887.rdx" class="js-directory-link" id="9525cc5c6aa5d74ec498d99441a604e8-6772e0ea70bf1eb4d83c3ba06d6c8ecf5aadc87c" title="unnamed-chunk-2_a0611fbf7a60329190d8cfb2b7902887.rdx">unnamed-chunk-2_a0611fbf7a60329190d8cfb2b7902887.rdx</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-3_6f9b532f147c68295baa6bb37c8cc58b.RData" class="js-directory-link" id="404f79eefb59987aefe09697c7beae63-be45cfd57e738e8fd273d9749a5b1a913b8d3bae" title="unnamed-chunk-3_6f9b532f147c68295baa6bb37c8cc58b.RData">unnamed-chunk-3_6f9b532f147c68295baa6bb37c8cc58b.RData</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-3_6f9b532f147c68295baa6bb37c8cc58b.rdb" class="js-directory-link" id="9670d28e8a75c8586501489f7c6d1ca0-f75e289b5d1e1cee727029127da434e8b8a862eb" title="unnamed-chunk-3_6f9b532f147c68295baa6bb37c8cc58b.rdb">unnamed-chunk-3_6f9b532f147c68295baa6bb37c8cc58b.rdb</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-3_6f9b532f147c68295baa6bb37c8cc58b.rdx" class="js-directory-link" id="4fb605e323f5fc8418238abf3a671378-d1702b3cc7cd93d40b89306b4243bd6877466a71" title="unnamed-chunk-3_6f9b532f147c68295baa6bb37c8cc58b.rdx">unnamed-chunk-3_6f9b532f147c68295baa6bb37c8cc58b.rdx</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-6_614ccad030628c6a0a2ba01d11ecdf14.RData" class="js-directory-link" id="3f586debbc63724529a9d66b63f235bc-e24458acf6b4f961cbe7034f3b715ae597c6855b" title="unnamed-chunk-6_614ccad030628c6a0a2ba01d11ecdf14.RData">unnamed-chunk-6_614ccad030628c6a0a2ba01d11ecdf14.RData</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-6_614ccad030628c6a0a2ba01d11ecdf14.rdb" class="js-directory-link" id="dee2a5ec6b92859e2446b7c562e8deab-ecaeaab4d8ca251b672c9907e6c50f990232b522" title="unnamed-chunk-6_614ccad030628c6a0a2ba01d11ecdf14.rdb">unnamed-chunk-6_614ccad030628c6a0a2ba01d11ecdf14.rdb</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-6_614ccad030628c6a0a2ba01d11ecdf14.rdx" class="js-directory-link" id="e0cbebd8232f7d005e58280e2047a7e1-63d540ba2c9f23cfb8e70eceda79a08c5d6ef93c" title="unnamed-chunk-6_614ccad030628c6a0a2ba01d11ecdf14.rdx">unnamed-chunk-6_614ccad030628c6a0a2ba01d11ecdf14.rdx</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-7_4fcfd9c9925613b27641798715272667.RData" class="js-directory-link" id="11806b0e0af34b9ca259a3cd60c06822-3111c7e324d63aa136b1d7e7f4168664b99270bc" title="unnamed-chunk-7_4fcfd9c9925613b27641798715272667.RData">unnamed-chunk-7_4fcfd9c9925613b27641798715272667.RData</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-7_4fcfd9c9925613b27641798715272667.rdb" class="js-directory-link" id="fef31e83f145b93d0a4660db539b9315-e69de29bb2d1d6434b8b29ae775ad8c2e48c5391" title="unnamed-chunk-7_4fcfd9c9925613b27641798715272667.rdb">unnamed-chunk-7_4fcfd9c9925613b27641798715272667.rdb</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-7_4fcfd9c9925613b27641798715272667.rdx" class="js-directory-link" id="d15f8ea052bb7fe6a500c7b7939f7151-6772e0ea70bf1eb4d83c3ba06d6c8ecf5aadc87c" title="unnamed-chunk-7_4fcfd9c9925613b27641798715272667.rdx">unnamed-chunk-7_4fcfd9c9925613b27641798715272667.rdx</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-8_16d9ad5596517dfddd6e97856658e119.RData" class="js-directory-link" id="7a9c919efaf68fec637a340fc3d75d90-a4f2a0dff2e920d83b336641f4723a59dd9b2380" title="unnamed-chunk-8_16d9ad5596517dfddd6e97856658e119.RData">unnamed-chunk-8_16d9ad5596517dfddd6e97856658e119.RData</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-8_16d9ad5596517dfddd6e97856658e119.rdb" class="js-directory-link" id="a8a9517b86cd8dfa0517f5bec1d2cbde-511400a0ba6dd948d6bc2dbef655887fcef96f06" title="unnamed-chunk-8_16d9ad5596517dfddd6e97856658e119.rdb">unnamed-chunk-8_16d9ad5596517dfddd6e97856658e119.rdb</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-8_16d9ad5596517dfddd6e97856658e119.rdx" class="js-directory-link" id="8fa571a6afa46b7f0cba1fc67438eb73-e4a0fcf58ae008802e885d5fca743d688544ea8b" title="unnamed-chunk-8_16d9ad5596517dfddd6e97856658e119.rdx">unnamed-chunk-8_16d9ad5596517dfddd6e97856658e119.rdx</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-9_1457768d075b0280f6bf9784268eb19e.RData" class="js-directory-link" id="79167188b0c72445bc9cd03aacc28029-9df69501dcd157b09ea9e8375361e89aaf37eb09" title="unnamed-chunk-9_1457768d075b0280f6bf9784268eb19e.RData">unnamed-chunk-9_1457768d075b0280f6bf9784268eb19e.RData</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-9_1457768d075b0280f6bf9784268eb19e.rdb" class="js-directory-link" id="d02c1e4d5cfad59e96e6498ccf85e988-e69de29bb2d1d6434b8b29ae775ad8c2e48c5391" title="unnamed-chunk-9_1457768d075b0280f6bf9784268eb19e.rdb">unnamed-chunk-9_1457768d075b0280f6bf9784268eb19e.rdb</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/kalimu/openPoland/blob/master/README_cache/unnamed-chunk-9_1457768d075b0280f6bf9784268eb19e.rdx" class="js-directory-link" id="2ed5eb05366dbd0c820763388f2e598d-6772e0ea70bf1eb4d83c3ba06d6c8ecf5aadc87c" title="unnamed-chunk-9_1457768d075b0280f6bf9784268eb19e.rdx">unnamed-chunk-9_1457768d075b0280f6bf9784268eb19e.rdx</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</include-fragment>
+
+
+  
+
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.03544s from github-fe120-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-d22b59d0085e83b7549ba4341ec9e68f80c2f29c8e49213ee182003dc8d568c6.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-b1799c46bb59be68d925cba885ab38303711632ad670e579e1bc4857963e52cb.js"></script>
+      
+      
+
+  </body>
+</html>
+
